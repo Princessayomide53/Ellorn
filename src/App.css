@@ -1,0 +1,6 @@
+.text-stroke {
+  -webkit-text-stroke: 1px #484848; /* Adjust the width and color as needed */
+  text-stroke: 1px #484848; /* Adjust the width and color as needed */
+  -webkit-text-fill-color: white; /* Color of the text inside the stroke */
+  color: white; /* Color of the text inside the stroke for non-WebKit browsers */
+}
