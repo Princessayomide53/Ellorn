@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Layout/Header/Header";
 import Logo from "./components/Layout/Header/Logo";
+import Main from "./components/Layout/Main/Main";
 import Nav from "./components/Layout/Navbar/Nav";
 
 function App() {
@@ -8,10 +9,11 @@ function App() {
     <>
       {" "}
       <Nav />
-      <div className="max-w-[80rem] m-auto">
+      <div className="">
         <Header />
+        <Logo />
+        <Main />
       </div>
-      <Logo />
     </>
   );
 }

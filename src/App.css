@@ -4,3 +4,7 @@
   -webkit-text-fill-color: white; /* Color of the text inside the stroke */
   color: white; /* Color of the text inside the stroke for non-WebKit browsers */
 }
+
+.background {
+  background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
+}

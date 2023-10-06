@@ -7,7 +7,7 @@ import "../../../App.css";
 
 const Header = () => {
   return (
-    <section>
+    <section className="max-w-[80rem] m-auto">
       <div className="grid-cols-3 grid place-content-center place-items-center my-[3rem]">
         <div>
           <img src={images} alt="" className="h-[40rem]" />
