@@ -5,6 +5,10 @@
   color: white; /* Color of the text inside the stroke for non-WebKit browsers */
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .background {
   background: linear-gradient(180deg, #fff 0%, #fafafa 100%);
 }
