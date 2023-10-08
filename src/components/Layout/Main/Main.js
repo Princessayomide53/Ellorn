@@ -13,7 +13,8 @@ const Main = () => {
           <p className="text-[#8A8A8A] text-[1rem] font-normal leading-[1.675rem] py-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit.
             Scelerisque duis ultrices sollicitudin aliquam sem.
-            <br /> Scelerisque duis ultrices sollicitudin{" "}
+            <br /> Scelerisque duis ultrices sollicitudin.
+            <br /> Scelerisque duis ultrices sollicitudin aliquam sem.
           </p>
           <button className="bg-black text-white text-[1rem] rounded-md px-10 py-3 my-3">
             Buy Now
