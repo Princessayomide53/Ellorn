@@ -1,7 +1,8 @@
 import React from "react";
 
 const WmsWear = () => {
-  return <div>WmsWear</div>;
+  // const [wears, setWears] = useState(dummyWears);
+  return <section>{/* <MensWear wears={dummyWears} /> */}</section>;
 };
 
 export default WmsWear;
