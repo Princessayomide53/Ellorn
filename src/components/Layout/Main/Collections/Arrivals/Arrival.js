@@ -28,7 +28,7 @@ const Arrival = () => {
             className={
               tab === 1
                 ? "active bg-black rounded-lg px-8 py-2 cursor-pointer text-[1rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg"
+                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg cursor-pointer"
             }
             // style={{ marginRight: "5rem" }}
           >
@@ -42,7 +42,7 @@ const Arrival = () => {
             className={
               tab === 2
                 ? "active bg-black rounded-lg px-8 py-2 cursor-pointer text-[1rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg"
+                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg cursor-pointer"
             }
             // style={{ marginRight: "5rem" }}
           >
@@ -56,7 +56,7 @@ const Arrival = () => {
             className={
               tab === 3
                 ? "active bg-black rounded-lg px-8 py-2 cursor-pointer text-[1rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg"
+                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg cursor-pointer"
             }
           >
             Women's Accessories
@@ -69,7 +69,7 @@ const Arrival = () => {
             className={
               tab === 4
                 ? "active bg-black rounded-lg px-8 py-2 cursor-pointer text-[1rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg"
+                : "bg-[#FAFAFA] text-[#8A8A8A] px-8 py-2 rounded-lg cursor-pointer"
             }
           >
             Men's Accessories
