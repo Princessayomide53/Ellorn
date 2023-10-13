@@ -8,7 +8,8 @@ import Images6 from "../../../../../assets/Images6.png";
 import Images7 from "../../../../../assets/Images7.jpg";
 import Images8 from "../../../../../assets/Images8.jpg";
 import Images9 from "../../../../../assets/Images9.jpg";
-import WmsWear from "./WmsWear";
+// import WmsWear from "./WmsWear";
+import MensWear from "../Men's Wear/MensWear";
 
 const dummy_WmsWear = [
   {
@@ -87,7 +88,7 @@ const dummy_WmsWear = [
 const Women = () => {
   return (
     <div>
-      <WmsWear WmsWear={dummy_WmsWear} />
+      <MensWear wears={dummy_WmsWear} />
     </div>
   );
 };
