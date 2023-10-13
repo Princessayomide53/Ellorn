@@ -43,12 +43,14 @@ const MensWear = (props) => {
               <h4 className=" text-[#484848] text-[1.5rem] tracking-[-0.015rem] font-medium ">
                 ${items.amount}
               </h4>
-              <select className="border-2 border-black cursor-pointer rounded-md">
-                <option value="s">s</option>
-                <option value="m">m</option>
-                <option value="xl">xl</option>
-                <option value="xxl">xxl</option>
-              </select>
+              {items.shouldRender && (
+                <select className="border-2 border-black cursor-pointer rounded-md">
+                  <option value="s">s</option>
+                  <option value="m">m</option>
+                  <option value="xl">xl</option>
+                  <option value="xxl">xxl</option>
+                </select>
+              )}
             </div>
           </Card>
         ))}

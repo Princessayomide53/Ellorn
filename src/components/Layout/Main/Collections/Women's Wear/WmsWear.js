@@ -5,7 +5,7 @@ import { CiStar } from "react-icons/ci";
 const WmsWear = (props) => {
   return (
     <section className="max-w-[70rem] m-auto  my-[2rem]">
-      <ul className="grid grid-cols-3 gap-[5rem]  place-items-center">
+      <ul className="grid grid-cols-3 gap-[3rem]  place-items-center">
         {props.WmsWear.map((items) => (
           <Card
             key={items.id}
@@ -14,7 +14,7 @@ const WmsWear = (props) => {
             <img
               src={items.img}
               alt="men's wears"
-              className="w-[20rem] h-[15rem] mx-auto rounded-3xl object-contain"
+              className="w-[2r2em] h-[15rem] mx-auto rounded-3xl object-contain"
             />
             <div className="flex justify-between">
               <h1 className=" -mt-3 text-[1.25rem] text-[#484848] font-medium leading-normal">
