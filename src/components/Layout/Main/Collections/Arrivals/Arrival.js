@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Men from "../Men's Wear/Men";
 import Women from "../Women's Wear/Women";
-import WmsAccessories from "../Women's Accessories/WmsAccessories";
+// import WmsAccessories from "../Women's Accessories/WmsAccessories";
 import Wms from "../Women's Accessories/Wms";
+import MenAccessories from "../Men's Accessories/MenAccessories";
 
 const Arrival = () => {
   const [tab, setTab] = useState(1);
@@ -82,7 +83,7 @@ const Arrival = () => {
           {tab === 1 && <Men />}
           {tab === 2 && <Women />}
           {tab === 3 ? <Wms /> : ""}
-          {tab === 4 ? "" : ""}
+          {tab === 4 ? <MenAccessories /> : ""}
         </div>
       </div>
     </div>

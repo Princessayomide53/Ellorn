@@ -10,7 +10,8 @@ import accessory6 from "../../../../../assets/accessory6.jpg";
 import accessory7 from "../../../../../assets/accessory7.jpg";
 import accessory8 from "../../../../../assets/accessory8.jpg";
 import accessory9 from "../../../../../assets/accessory9.jpg";
-// import accessory10 from "../../../../../assets/accessory10.jpg";
+import guccimani from "../../../../../assets/guccimani.jpg";
+import femalering from "../../../../../assets/femalering.jpg";
 import MensWear from "../Men's Wear/MensWear";
 
 const dummy_Accessories = [
@@ -89,6 +90,24 @@ const dummy_Accessories = [
   {
     id: 10,
     img: earring,
+    amount: 1000,
+    description: "Silver Earring",
+    brand: "Dior",
+    reviews: "(41k) customers review",
+    shouldRender: false,
+  },
+  {
+    id: 11,
+    img: guccimani,
+    amount: 2220.0,
+    description: "Gucci Bag",
+    brand: "Gucci",
+    reviews: "(41k) customers review",
+    shouldRender: false,
+  },
+  {
+    id: 10,
+    img: femalering,
     amount: 1000,
     description: "Silver Earring",
     brand: "Dior",
