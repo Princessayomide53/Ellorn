@@ -5,6 +5,7 @@ import Logo from "./components/Layout/Header/Logo";
 import Main from "./components/Layout/Main/Main";
 import Nav from "./components/Layout/Navbar/Nav";
 import Arrival from "./components/Layout/Main/Collections/Arrivals/Arrival";
+import Slider from "./components/Layout/Main/Slider";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Logo />
         <Main />
         <Arrival />
+        <Slider />
         {/* <Men /> */}
       </div>
     </>
