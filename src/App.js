@@ -6,6 +6,8 @@ import Main from "./components/Layout/Main/Main";
 import Nav from "./components/Layout/Navbar/Nav";
 import Arrival from "./components/Layout/Main/Collections/Arrivals/Arrival";
 import Slider from "./components/Layout/Main/Slider";
+import Features from "./components/Layout/Main/Features";
+import Socials from "./components/Layout/Main/Socials";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Main />
         <Arrival />
         <Slider />
+        <Features />
+        <Socials />
         {/* <Men /> */}
       </div>
     </>
