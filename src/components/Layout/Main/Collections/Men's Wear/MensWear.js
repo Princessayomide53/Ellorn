@@ -9,7 +9,7 @@ const MensWear = (props) => {
         {props.wears.map((items) => (
           <Card
             key={items.id}
-            className="w-[21rem] h-[24rem] bg-white shadow-2xl rounded-2xl px-[2rem]"
+            className="w-[21rem] h-[24rem] bg-white shadow-xl rounded-2xl px-[2rem]"
           >
             <img
               src={items.img}

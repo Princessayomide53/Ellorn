@@ -4,7 +4,7 @@ import image from "../../../assets/image.png";
 
 const Slider = () => {
   return (
-    <section className="mt-[12rem] relative mb-20">
+    <section className="mt-[6rem] relative 2xl:max-w-[80rem] m-auto">
       <img src={slider} alt="" className="w-full h-[32rem]" />
       {/* <div className="flex justify-evenly z-10"> */}
       <img

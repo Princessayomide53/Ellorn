@@ -26,7 +26,7 @@ const pictures = [
   },
   {
     id: 5,
-    img: socials6,
+    img: socials5,
   },
   {
     id: 6,
@@ -39,11 +39,13 @@ const pictures = [
 ];
 const Socials2 = () => {
   return (
-    <div className="flex">
-      {pictures.map((image) => (
-        <img src={image.img} alt="" />
-      ))}
-    </div>
+    <section className="2xl:max-w-[80rem] m-auto">
+      <div className="grid grid-cols-7 h-[100%] place-content-center place-items-center">
+        {pictures.map((image) => (
+          <img src={image.img} alt="" className="w-[13.5rem] object-cover" />
+        ))}
+      </div>
+    </section>
   );
 };
 
