@@ -3,7 +3,7 @@ import TestimonialDisplay from "./TestimonialDisplay";
 
 const Testimonials = () => {
   return (
-    <section className="bg-[#FAFAFA] h-[30rem] w-full mb-10">
+    <section className="bg-[#FAFAFA] h-[50rem] w-full mb-10">
       <div className="max-w-[80rem] m-auto">
         <h1 className="capitalize font-serif pt-[3.5rem] text-[#484848] text-center text-[2.875rem] font-normal leading-normal pb-[1.25rem]">
           this is what our customer say
