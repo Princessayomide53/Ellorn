@@ -7,13 +7,13 @@ import "../../../App.css";
 
 const Header = () => {
   return (
-    <section className="max-w-[80rem] m-auto">
+    <section className="max-w-[85rem] m-auto">
       <div className="grid-cols-3 grid place-content-center place-items-center my-[3rem]">
         <div>
           <img src={images} alt="" className="h-[40rem]" />
         </div>
         <div className="">
-          <img src={image3} alt="" className="" />
+          <img src={image3} alt="" className="w-[24.9375rem] h-[9.0625rem]" />
           <h2 className="text-[#484848] text-center text-[4.6rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
@@ -29,7 +29,7 @@ const Header = () => {
             </button>
           </div>
 
-          <img src={image4} alt="" />
+          <img src={image4} alt="" className="w-[26.625rem] h-[9.375rem]" />
         </div>
         <div>
           <img src={image2} alt="" className="h-[40rem]" />

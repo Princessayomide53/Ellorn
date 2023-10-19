@@ -5,7 +5,7 @@ import Items from "./Items";
 const Main = () => {
   return (
     <main className="background w-full h-full">
-      <div className="max-w-[76rem] m-auto py-[3.5rem] flex space-x-[12rem]">
+      <div className="max-w-[78rem] m-auto py-[3.5rem] flex space-x-[17rem]">
         <div>
           <h1 className="text-[#484848] text-[2.85rem] font-medium">
             Deals of the Month

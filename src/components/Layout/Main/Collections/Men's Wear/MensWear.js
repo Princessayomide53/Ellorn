@@ -4,7 +4,7 @@ import { CiStar } from "react-icons/ci";
 
 const MensWear = (props) => {
   return (
-    <section className="max-w-[70rem] m-auto  my-[2rem]">
+    <section className="max-w-[78rem] m-auto  my-[2rem]">
       <ul className="grid grid-cols-3 gap-[5rem]  place-items-center">
         {props.wears.map((items) => (
           <Card

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import "swiper/css/effect-coverflow";
@@ -8,6 +8,7 @@ import Card from "../../UI/Cards";
 import Test1 from "../../../assets/Test1.png";
 import Test2 from "../../../assets/Test2.png";
 import stars from "../../../assets/stars.png";
+// import { useState } from "react";
 
 const testmonials = [
   {
@@ -24,8 +25,8 @@ const testmonials = [
 
 const TestimonialDisplay = () => {
   return (
-    <section className="w-full h-[300px] relative">
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center z-20">
+    <section className="w-full h-[300px] relative max-w-[80rem]">
+      <div className="absolute top-0 left-0 -z-10 w-full h-full ">
         {testmonials.map((data) => (
           <Card
             key={data.id}

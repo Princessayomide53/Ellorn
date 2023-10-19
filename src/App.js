@@ -9,6 +9,8 @@ import Slider from "./components/Layout/Main/Slider";
 import Features from "./components/Layout/Main/Features";
 import Socials from "./components/Layout/Main/Socials";
 import Testimonials from "./components/Layout/Main/Testimonials";
+import Footer from "./components/Layout/Footer/Footer";
+import MiniFooter from "./components/Layout/Footer/MiniFooter";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Features />
         <Socials />
         <Testimonials />
+        <Footer />
+        <MiniFooter />
         {/* <Men /> */}
       </div>
     </>

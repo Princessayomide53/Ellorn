@@ -19,6 +19,7 @@ const dummy_WmsWear = [
     description: "Shiny Dress",
     brand: "Fendi",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const dummy_WmsWear = [
     description: "Long Dress",
     brand: "Dolce & Gabbana",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ const dummy_WmsWear = [
     description: "Full Sweater",
     brand: "Dior",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ const dummy_WmsWear = [
     description: "Corporate Shirt",
     brand: "Valentino",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 5,
@@ -51,6 +55,7 @@ const dummy_WmsWear = [
     description: "Soft Blue Top",
     brand: "Prada",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 6,
@@ -59,6 +64,7 @@ const dummy_WmsWear = [
     description: "White Shirt",
     brand: "Lacoste",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ const dummy_WmsWear = [
     description: "Armless Gown",
     brand: "Zara",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 8,
@@ -75,6 +82,7 @@ const dummy_WmsWear = [
     description: "Gown Hood",
     brand: "Ralph Lauren",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 9,
@@ -83,6 +91,7 @@ const dummy_WmsWear = [
     description: "Armless Top",
     brand: "H&M",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
 ];
 const Women = () => {

@@ -22,6 +22,7 @@ const dummy_Wears = [
     description: "Silky Top",
     brand: "Fendi",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const dummy_Wears = [
     description: "Hoods and Shorts",
     brand: "Dolce & Gabbana",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const dummy_Wears = [
     description: "Fits Top",
     brand: "Dior",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const dummy_Wears = [
     description: "Corporate Shirt",
     brand: "Valentino",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 5,
@@ -58,6 +62,7 @@ const dummy_Wears = [
     description: "Soft Blue Top",
     brand: "Prada",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 6,
@@ -67,6 +72,7 @@ const dummy_Wears = [
     description: "Jean and Jacket",
     brand: "Lacoste",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 7,
@@ -76,6 +82,7 @@ const dummy_Wears = [
     description: "Sheer Gray Top",
     brand: "Givenchy",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 8,
@@ -85,6 +92,7 @@ const dummy_Wears = [
     description: "Thick black Top",
     brand: "Louis Vuitton",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 9,
@@ -94,6 +102,7 @@ const dummy_Wears = [
     description: "Nice Brown Suit",
     brand: "Burberry",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 10,
@@ -103,6 +112,7 @@ const dummy_Wears = [
     description: "Jacket and  Top",
     brand: "Armani",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
   {
     id: 11,
@@ -112,6 +122,7 @@ const dummy_Wears = [
     description: "Thin Top",
     brand: "H&M",
     reviews: "(41k) customers review",
+    shouldRender: true,
   },
 ];
 const Men = () => {
