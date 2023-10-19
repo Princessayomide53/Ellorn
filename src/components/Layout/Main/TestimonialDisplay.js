@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 // import "swiper/css";
 // import "swiper/css/pagination";
 // import "swiper/css/effect-coverflow";
@@ -8,7 +8,6 @@ import Card from "../../UI/Cards";
 import Test1 from "../../../assets/Test1.png";
 import Test2 from "../../../assets/Test2.png";
 import stars from "../../../assets/stars.png";
-// import { useState } from "react";
 
 const testmonials = [
   {

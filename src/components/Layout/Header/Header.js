@@ -7,10 +7,10 @@ import "../../../App.css";
 
 const Header = () => {
   return (
-    <section className="max-w-[85rem] m-auto">
+    <section className="max-w-[80rem] m-auto">
       <div className="grid-cols-3 grid place-content-center place-items-center my-[3rem]">
-        <div>
-          <img src={images} alt="" className="h-[40rem]" />
+        <div className="">
+          <img src={images} alt="" className="h-[47rem] w-[24.5rem]" />
         </div>
         <div className="">
           <img src={image3} alt="" className="w-[24.9375rem] h-[9.0625rem]" />
@@ -29,10 +29,10 @@ const Header = () => {
             </button>
           </div>
 
-          <img src={image4} alt="" className="w-[26.625rem] h-[9.375rem]" />
+          <img src={image4} alt="" className="" />
         </div>
         <div>
-          <img src={image2} alt="" className="h-[40rem]" />
+          <img src={image2} alt="" className="h-[47rem] w-[24.5rem]" />
         </div>
       </div>
       {/* <Logo /> */}

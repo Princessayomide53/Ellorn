@@ -30,7 +30,7 @@ const Footer = () => {
             />
           </div>
           <div className="flex justify-center">
-            <button className=" bg-[#484848] text-white rounded-lg h-[3.5rem] w-[12.9375rem] transition duration-300 py-[0.625rem]">
+            <button className=" bg-black text-white rounded-lg h-[3.5rem] w-[12.9375rem] transition duration-300 py-[0.625rem]">
               Subscribe
             </button>
           </div>
