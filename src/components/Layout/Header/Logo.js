@@ -8,13 +8,33 @@ import logo5 from "../../../assets/logo5.png";
 
 const Logo = () => {
   return (
-    <Card className="my-[3rem]  shadow-xl py-[4rem] px-[3rem] h-[10.5rem]">
-      <div className="max-w-[77rem] mx-auto flex justify-between">
-        <img src={logo} alt="" className="w-[10rem] h-[1.7rem]" />
-        <img src={logo2} alt="" className="w-[10rem] h-[1.3rem]" />
-        <img src={logo3} alt="" className="w-[10rem] h-[1.7rem]" />
-        <img src={logo4} alt="" className="w-[10rem] h-[1.7rem]" />
-        <img src={logo5} alt="" className="w-[10rem] h-[1.7rem]" />
+    <Card className="my-[3rem]  shadow-xl py-[4rem] px-[3rem] lg:h-[10.5rem] md:h-[7.5rem]">
+      <div className="lg:max-w-[77rem] md:max-w-[87rem] mx-auto flex justify-between">
+        <img
+          src={logo}
+          alt=""
+          className="lg:w-[10rem] lg:h-[1.7rem] md:w-[5rem] md:h-[0.8rem]"
+        />
+        <img
+          src={logo2}
+          alt=""
+          className="lg:w-[10rem] lg:h-[1.3rem] md:w-[7rem] md:h-[0.8rem]"
+        />
+        <img
+          src={logo3}
+          alt=""
+          className="lg:w-[10rem] lg:h-[1.7rem] md:w-[5rem] md:h-[0.8rem]"
+        />
+        <img
+          src={logo4}
+          alt=""
+          className="lg:w-[10rem] lg:h-[1.7rem] md:w-[5rem] md:h-[0.8rem]"
+        />
+        <img
+          src={logo5}
+          alt=""
+          className="lg:w-[10rem] lg:h-[1.7rem] md:w-[5rem] md:h-[0.8rem]"
+        />
       </div>
     </Card>
   );

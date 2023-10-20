@@ -44,7 +44,7 @@ const MensWear = (props) => {
                 ${items.amount}
               </h4>
               {items.shouldRender && (
-                <select className="border-2 border-black cursor-pointer rounded-md">
+                <select className="border-2 border-black cursor-pointer rounded-md p-1">
                   <option value="s">s</option>
                   <option value="m">m</option>
                   <option value="xl">xl</option>

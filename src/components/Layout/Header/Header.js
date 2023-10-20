@@ -7,20 +7,28 @@ import "../../../App.css";
 
 const Header = () => {
   return (
-    <section className="max-w-[80rem] m-auto">
+    <section className="lg:max-w-[80rem] md:max-w-[90rem] m-auto">
       <div className="grid-cols-3 grid place-content-center place-items-center my-[3rem]">
         <div className="">
-          <img src={images} alt="" className="h-[47rem] w-[24.5rem]" />
+          <img
+            src={images}
+            alt=""
+            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[32rem]"
+          />
         </div>
         <div className="">
-          <img src={image3} alt="" className="w-[24.9375rem] h-[9.0625rem]" />
-          <h2 className="text-[#484848] text-center text-[4.6rem] tracking-tight font-medium">
+          <img
+            src={image3}
+            alt=""
+            className="lg:w-[24.9375rem] lg:h-[9.0625rem] md:w-[15rem] md:h-[5rem]"
+          />
+          <h2 className="text-[#484848] text-center lg:text-[5.6875rem] md:text-[3.6875rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
-          <h2 className="text-center text-[#484848]  text-[7.5rem] -m-[2.2rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[11.6875rem] md:text-[8.6875rem] -m-[2.2rem] font-medium text-stroke">
             SALE
           </h2>
-          <p className="text-center text-[#484848] font-normal text-[1.25rem] tracking-[0.125rem] pt-2">
+          <p className="text-center text-[#484848] font-normal text-[1.25rem] tracking-[0.125rem]">
             NEW COLLECTION
           </p>
           <div className="flex justify-center py-5">
@@ -29,10 +37,18 @@ const Header = () => {
             </button>
           </div>
 
-          <img src={image4} alt="" className="" />
+          <img
+            src={image4}
+            alt=""
+            className="lg:w-[26.625rem] lg:h-[9.375rem] "
+          />
         </div>
         <div>
-          <img src={image2} alt="" className="h-[47rem] w-[24.5rem]" />
+          <img
+            src={image2}
+            alt=""
+            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[32rem]"
+          />
         </div>
       </div>
       {/* <Logo /> */}
