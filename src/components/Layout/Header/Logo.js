@@ -8,8 +8,8 @@ import logo5 from "../../../assets/logo5.png";
 
 const Logo = () => {
   return (
-    <Card className="my-[3rem]  shadow-xl py-[4rem] px-[3rem] lg:h-[10.5rem] md:h-[7.5rem]">
-      <div className="lg:max-w-[77rem] md:max-w-[87rem] mx-auto flex justify-between">
+    <Card className="my-[3rem]  shadow-xl py-[4rem] lg:px-[3rem] md:px-[1.2875rem] lg:h-[10.5rem] md:h-[7.5rem]">
+      <div className="lg:max-w-[77rem] md:max-w-[88rem] mx-auto flex justify-around">
         <img
           src={logo}
           alt=""

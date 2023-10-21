@@ -7,13 +7,13 @@ import "../../../App.css";
 
 const Header = () => {
   return (
-    <section className="lg:max-w-[80rem] md:max-w-[90rem] m-auto">
+    <section className="lg:max-w-[80rem] md:max-w-[88rem] m-auto">
       <div className="grid-cols-3 grid place-content-center place-items-center my-[3rem]">
         <div className="">
           <img
             src={images}
             alt=""
-            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[32rem]"
+            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem]"
           />
         </div>
         <div className="">
@@ -25,7 +25,7 @@ const Header = () => {
           <h2 className="text-[#484848] text-center lg:text-[5.6875rem] md:text-[3.6875rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
-          <h2 className="text-center text-[#484848] lg:text-[11.6875rem] md:text-[8.6875rem] -m-[2.2rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[11.6875rem] md:text-[7.6875rem] -m-[2.2rem] font-medium text-stroke">
             SALE
           </h2>
           <p className="text-center text-[#484848] font-normal text-[1.25rem] tracking-[0.125rem]">
@@ -47,7 +47,7 @@ const Header = () => {
           <img
             src={image2}
             alt=""
-            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[32rem]"
+            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem]"
           />
         </div>
       </div>

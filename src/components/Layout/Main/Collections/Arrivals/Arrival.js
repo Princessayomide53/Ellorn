@@ -30,8 +30,8 @@ const Arrival = () => {
             }}
             className={
               tab === 1
-                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 cursor-pointer lg:text-[1rem] md:text-[0.75rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.75rem] rounded-lg cursor-pointer"
+                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 cursor-pointer lg:text-[1rem] md:text-[0.65rem] text-white"
+                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.65rem] rounded-lg cursor-pointer"
             }
             // style={{ marginRight: "5rem" }}
           >
@@ -44,8 +44,8 @@ const Arrival = () => {
             }}
             className={
               tab === 2
-                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.75rem] cursor-pointer text-[1rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.75rem] rounded-lg cursor-pointer"
+                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.65rem] cursor-pointer text-[1rem] text-white"
+                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.65rem] rounded-lg cursor-pointer"
             }
             // style={{ marginRight: "5rem" }}
           >
@@ -58,8 +58,8 @@ const Arrival = () => {
             }}
             className={
               tab === 3
-                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 cursor-pointer lg:text-[1rem] md:text-[0.75rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.75rem] rounded-lg cursor-pointer"
+                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 cursor-pointer lg:text-[1rem] md:text-[0.65rem] text-white"
+                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 lg:text-[1rem] md:text-[0.65rem] rounded-lg cursor-pointer"
             }
           >
             Women's Accessories
@@ -71,8 +71,8 @@ const Arrival = () => {
             }}
             className={
               tab === 4
-                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 cursor-pointer lg:text-[1rem] md:text-[0.75rem] text-white"
-                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 rounded-lg lg:text-[1rem] md:text-[0.75rem] cursor-pointer"
+                ? "active bg-black rounded-lg lg:px-8 md:px-5 py-2 cursor-pointer lg:text-[1rem] md:text-[0.65rem] text-white"
+                : "bg-[#FAFAFA] text-[#8A8A8A] lg:px-8 md:px-5 py-2 rounded-lg lg:text-[1rem] md:text-[0.65rem] cursor-pointer"
             }
           >
             Men's Accessories
@@ -82,8 +82,8 @@ const Arrival = () => {
         <div>
           {tab === 1 && <Men />}
           {tab === 2 && <Women />}
-          {tab === 3 ? <Wms /> : ""}
-          {tab === 4 ? <MenAccessories /> : ""}
+          {tab === 3 && <Wms />}
+          {tab === 4 && <MenAccessories />}
         </div>
       </div>
     </div>

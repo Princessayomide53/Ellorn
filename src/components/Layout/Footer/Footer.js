@@ -6,14 +6,18 @@ import Card from "../../UI/Cards";
 
 const Footer = () => {
   return (
-    <section className="max-w-[80rem] m-auto">
+    <section className="lg:max-w-[80rem] md:max-w-[88rem] m-auto">
       <footer className="flex between mb-[3rem]">
-        <img src={footer1} alt="" className="w-[21.1875rem] h-[46.6875rem]" />
-        <Card className="w-[39.4375rem] h-[20.8125rem]  m-auto p-[1rem]">
-          <h3 className="text-[#484848] pb-[1.25rem] text-center text-[2.475rem] font-normal leading-normal capitalize">
+        <img
+          src={footer1}
+          alt=""
+          className="lg:w-[21.1875rem] lg:h-[46.6875rem] md:w-[13.5rem] md:h-[35rem]"
+        />
+        <Card className="lg:w-[39.4375rem] lg:h-[20.8125rem] md:w-[28rem] md:h-[15rem]  m-auto p-[1rem]">
+          <h3 className="text-[#484848] pb-[1.25rem] text-center lg:text-[2.475rem] md:text-[1.5rem] font-normal leading-normal capitalize">
             Subscribe to our newsletter
           </h3>
-          <p className="text-[#8A8A8A] text-center leading-[1.625rem] text-[0.9rem] font-normal pb-[1.8rem]">
+          <p className="text-[#8A8A8A] text-center leading-[1.625rem] lg:text-[0.9rem] md:text-[0.65rem] font-normal pb-[1.8rem]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
             duis
             <br /> ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
@@ -35,7 +39,11 @@ const Footer = () => {
             </button>
           </div>
         </Card>
-        <img src={footer2} alt="" className="w-[20.0625rem] h-[46.6875rem]" />
+        <img
+          src={footer2}
+          alt=""
+          className="lg:w-[20.0625rem] md:w-[13.5rem] md:h-[35rem] lg:h-[46.6875rem]"
+        />
       </footer>
     </section>
   );
