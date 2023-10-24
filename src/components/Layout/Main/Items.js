@@ -33,7 +33,7 @@ const Items = () => {
       <img
         src={Images[imagesIndex]}
         alt=""
-        className="lg:w-[25rem] lg:h-[35rem] md:w-[13.5rem] md:h-[22.5rem] transition duration-300 ease-in-out object-cover"
+        className="lg:w-[25rem] lg:h-[35rem] md:w-[13.5rem] w-[10rem] h-[15.5rem] md:h-[22.5rem] transition duration-300 ease-in-out object-cover"
       />
     </section>
   );

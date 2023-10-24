@@ -7,32 +7,32 @@ import "../../../App.css";
 
 const Header = () => {
   return (
-    <section className="lg:max-w-[80rem] md:max-w-[88rem] m-auto">
-      <div className="grid-cols-3 grid place-content-center place-items-center my-[3rem]">
+    <section className="lg:max-w-[80rem] md:max-w-[88rem] max-w-[90rem] m-auto">
+      <div className="grid-cols-3 grid place-content-center place-items-center sm:my-[3rem] my-[1rem]">
         <div className="">
           <img
             src={images}
             alt=""
-            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem]"
+            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
           />
         </div>
         <div className="">
           <img
             src={image3}
             alt=""
-            className="lg:w-[24.9375rem] lg:h-[9.0625rem] md:w-[15rem] md:h-[5rem]"
+            className="lg:w-[24.9375rem] lg:h-[9.0625rem] md:w-[15rem] md:h-[5rem] w-[7.5rem] h-[3rem]"
           />
-          <h2 className="text-[#484848] text-center lg:text-[5.6875rem] md:text-[3.6875rem] tracking-tight font-medium">
+          <h2 className="text-[#484848] text-center lg:text-[5.6875rem] md:text-[3.6875rem] text-[2rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
-          <h2 className="text-center text-[#484848] lg:text-[11.6875rem] md:text-[7.6875rem] -m-[2.2rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[11.6875rem] md:text-[7.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
             SALE
           </h2>
-          <p className="text-center text-[#484848] font-normal text-[1.25rem] tracking-[0.125rem]">
+          <p className="text-center text-[#484848] font-normal sm:text-[1.25rem] text-[0.65rem] tracking-[0.125rem]">
             NEW COLLECTION
           </p>
           <div className="flex justify-center py-5">
-            <button className="mx-auto px-12 py-3 bg-black text-white rounded-md ">
+            <button className="mx-auto sm:px-12 sm:py-3 px-7 py-2 bg-black text-white rounded-md sm:text-[1rem] text-[0.55rem">
               Shop Now
             </button>
           </div>
@@ -40,14 +40,14 @@ const Header = () => {
           <img
             src={image4}
             alt=""
-            className="lg:w-[26.625rem] lg:h-[9.375rem] "
+            className="lg:w-[26.625rem] lg:h-[9.375rem]"
           />
         </div>
         <div>
           <img
             src={image2}
             alt=""
-            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem]"
+            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
           />
         </div>
       </div>
