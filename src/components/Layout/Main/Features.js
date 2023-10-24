@@ -34,16 +34,20 @@ const features = [
 
 const Features = () => {
   return (
-    <Card className="bg-white flex py-[2rem] m-auto  lg:max-w-[80rem] md:max-w-[88rem] justify-around w-full shadow-lg md:px-[2rem] lg:px-[5.5rem]">
+    <Card className="bg-white flex py-[2rem] m-auto 2xl:max-w-[80rem] justify-around w-full shadow-lg lg:px-[5.5rem] md:px-[2.5rem]">
       {features.map((item) => (
         <div
           className="flex space-x-3 lg:max-w-[80rem] md:max-w-[88rem]"
           key={item.id}
         >
-          <img src={item.img} alt="" className="w-[2.375rem] h-[3.125rem]" />
-          <p className="lg:text-[1.2rem] md:text-[0.75rem] font-medium text-[#484848] leading-normal">
+          <img
+            src={item.img}
+            alt=""
+            className="lg:w-[2.375rem] lg:h-[3.125rem] md:w-[1.5rem] md:h-[2.3rem]"
+          />
+          <p className="lg:text-[1.2rem] md:text-[0.65rem] font-medium text-[#484848] leading-normal">
             {item.title} <br />
-            <span className="text-[0.95rem] font-normal text-[#484848] leading-[1.625rem]">
+            <span className="lg:text-[0.95rem] md:text-[0.75rem] font-normal text-[#484848] leading-[1.625rem]">
               {item.text}
             </span>
           </p>

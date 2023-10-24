@@ -1,5 +1,5 @@
 import React from "react";
-import TestimonialDisplay from "./TestimonialDisplay";
+// import TestimonialDisplay from "./TestimonialDisplay";
 
 const Testimonials = () => {
   return (
@@ -12,7 +12,7 @@ const Testimonials = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
           duis
         </p>
-        <TestimonialDisplay />
+        {/* <TestimonialDisplay /> */}
       </div>
     </section>
   );

@@ -3,9 +3,9 @@ import { GiShoppingCart } from "react-icons/gi";
 
 const NavButton = () => {
   return (
-    <button className="flex space-x-7 px-[3rem] py-[0.75rem] bg-orange-100 rounded-full -mt-2">
+    <button className="flex sm:space-x-7 space-x-3 sm:px-[3rem] px-[1rem] py-[0.35rem] sm:py-[0.75rem] bg-orange-100 rounded-full sm:-mt-2">
       Carts{" "}
-      <span className="px-2 pt-1 text-2xl">
+      <span className="px-2 sm:pt-1 sm:text-2xl  text-sm">
         <GiShoppingCart />
       </span>
     </button>
