@@ -18,8 +18,8 @@ const Items = () => {
     setImagesIndex((index) => (index === Images.length - 1 ? 0 : index + 1));
   };
   return (
-    <section className="flex lg:space-x-[3.5rem] md:space-x-[2.5rem] ">
-      <div className="flex space-x-[1.5rem] justify-end items-end">
+    <section className="flex lg:space-x-[3.5rem] md:space-x-[2.5rem] space-x-[1.3rem] sm:pr-0 pr-7">
+      <div className="flex sm:space-x-[1.5rem] space-x-[1rem] justify-end items-end">
         <MdOutlineKeyboardArrowLeft
           className="bg-white mx-1 my-1 shadow-xl lg:text-2xl md:text-base rounded-full cursor-pointer text-black z-20"
           onClick={prevIndex}
