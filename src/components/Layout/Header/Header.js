@@ -13,7 +13,7 @@ const Header = () => {
           <img
             src={images}
             alt=""
-            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
+            className="xl:h-[47rem] xl:w-[24.5rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
           />
         </div>
         <div className="">
@@ -22,10 +22,10 @@ const Header = () => {
             alt=""
             className="lg:w-[24.9375rem] lg:h-[9.0625rem] md:w-[15rem] md:h-[5rem] w-[7.5rem] h-[3rem]"
           />
-          <h2 className="text-[#484848] text-center lg:text-[5.6875rem] md:text-[3.6875rem] text-[2rem] tracking-tight font-medium">
+          <h2 className="text-[#484848] text-center lg:text-[5.5rem] xl:text-[5.6875rem] md:text-[3.6875rem] text-[2rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
-          <h2 className="text-center text-[#484848] lg:text-[11.6875rem] md:text-[7.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[9.5rem] xl:text-[11.6875rem] md:text-[7.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
             SALE
           </h2>
           <p className="text-center text-[#484848] font-normal sm:text-[1.25rem] text-[0.65rem] tracking-[0.125rem]">
@@ -47,7 +47,7 @@ const Header = () => {
           <img
             src={image2}
             alt=""
-            className="lg:h-[47rem] lg:w-[24.5rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
+            className="xl:h-[47rem] xl:w-[24.5rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
           />
         </div>
       </div>
