@@ -3,7 +3,7 @@ import NavButton from "./NavButton";
 
 const Nav = () => {
   return (
-    <nav className="flex w-full justify-between  py-[0.5rem] sm:px-24 px-7 shadow-xl ">
+    <nav className="flex w-full justify-between  py-[0.5rem] sm:px-24 px-3 shadow-xl ">
       <h2 className="font-semibold sm:text-[3.25rem] text-[1.46rem] font-serif text-[#484848]">
         Ellorn
       </h2>

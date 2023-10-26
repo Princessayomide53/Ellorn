@@ -16,7 +16,7 @@ const Arrival = () => {
       <h2 className="text-[#484848] lg:text-[2.85rem] md:text-[2rem] text-[1rem] text-center font-normal pt-[4rem] ">
         New Arrivals
       </h2>
-      <p className="text-[#8A8A8A] lg:text-[1rem] md:text-[0.7rem] text-[0.5rem] text-center font-normal leading-[1.85rem] py-[0.5rem] mb-[2rem]">
+      <p className="text-[#8A8A8A] lg:text-[1rem] md:text-[0.7rem] text-[0.5rem] text-center font-normal sm:leading-[1.85rem] leading-normal py-[0.5rem] mb-[2rem]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
         duis
         <br /> ultrices sollicitudin aliquam sem. Scelerisque duis ultrices

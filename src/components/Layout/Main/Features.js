@@ -34,20 +34,20 @@ const features = [
 
 const Features = () => {
   return (
-    <Card className="bg-white flex py-[2rem] m-auto 2xl:max-w-[80rem] justify-around w-full shadow-lg lg:px-[5.5rem] md:px-[2.5rem]">
+    <Card className="bg-white flex sm:py-[2rem] py-[1rem] m-auto 2xl:max-w-[80rem] justify-around w-full shadow-lg lg:px-[5.5rem] md:px-[2.5rem] px-[1rem]">
       {features.map((item) => (
         <div
-          className="flex space-x-3 lg:max-w-[80rem] md:max-w-[88rem]"
+          className="flex sm:space-x-3 space-x-2  lg:max-w-[80rem] md:max-w-[88rem] max-w-[90rem]"
           key={item.id}
         >
           <img
             src={item.img}
             alt=""
-            className="lg:w-[2.375rem] lg:h-[3.125rem] md:w-[1.5rem] md:h-[2.3rem]"
+            className="lg:w-[2.375rem] lg:h-[3.125rem] md:w-[1.5rem] md:h-[2.3rem] w-[0.75rem] h-[0.85rem]"
           />
-          <p className="lg:text-[1.2rem] md:text-[0.65rem] font-medium text-[#484848] leading-normal">
+          <p className="lg:text-[1.2rem] md:text-[0.65rem] text-[0.45rem] font-medium text-[#484848] leading-normal">
             {item.title} <br />
-            <span className="lg:text-[0.95rem] md:text-[0.75rem] font-normal text-[#484848] leading-[1.625rem]">
+            <span className="lg:text-[0.95rem] md:text-[0.75rem] text-[0.35rem] font-normal text-[#484848] sm:leading-[1.625rem] pt-3 sm:pt-0">
               {item.text}
             </span>
           </p>
