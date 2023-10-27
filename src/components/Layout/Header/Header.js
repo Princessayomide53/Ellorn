@@ -25,7 +25,7 @@ const Header = () => {
           <h2 className="text-[#484848] text-center lg:text-[5.5rem] xl:text-[5.6875rem] md:text-[3.6875rem] text-[2rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
-          <h2 className="text-center text-[#484848] lg:text-[9.5rem] xl:text-[11.6875rem] md:text-[7.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[9.5rem] xl:text-[11.2875rem] md:text-[7.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
             SALE
           </h2>
           <p className="text-center text-[#484848] font-normal sm:text-[1.25rem] text-[0.65rem] tracking-[0.125rem]">

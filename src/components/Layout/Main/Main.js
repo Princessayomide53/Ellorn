@@ -5,9 +5,9 @@ import Items from "./Items";
 const Main = () => {
   return (
     <main className="background w-full h-full">
-      <div className="lg:max-w-[78rem] md:max-w-[88rem] m-auto py-[3.5rem] max-w-[90rem]  flex lg:justify-around xl:space-x-[17rem] md:justify-around flex-col justify-center items-center space-y-[3rem] sm:flex-row">
+      <div className="lg:max-w-[60rem] xl:max-w-[78rem] md:max-w-[88rem] m-auto py-[3.5rem] max-w-[90rem]  flex lg:justify-around xl:space-x-[17rem] md:justify-around flex-col justify-center items-center space-y-[3rem] sm:flex-row">
         <div>
-          <h1 className="text-[#484848] lg:text-[2.85rem] md:text-[1.8rem] text-[1.9rem] font-medium">
+          <h1 className="text-[#484848] lg:text-[2.4rem] xl:text-[2.85rem] md:text-[1.8rem] text-[1.9rem] font-medium">
             Deals of the Month
           </h1>
           <p className="text-[#8A8A8A] lg:text-[1rem] md:text-[0.75rem] text-[0.65rem] font-normal leading-[1.675rem] py-5">

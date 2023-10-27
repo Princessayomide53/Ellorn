@@ -22,7 +22,7 @@ const Arrival = () => {
         <br /> ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
         sollicitudin{" "}
       </p>
-      <div className=" lg:max-w-[80rem] md:max-w-[88rem] m-auto max-w-[90rem]">
+      <div className="lg:max-w-[60rem] xl:max-w-[80rem] md:max-w-[88rem] m-auto max-w-[90rem]">
         <ul className="flex lg:justify-around md:justify-evenly justify-evenly">
           <li
             onClick={() => {

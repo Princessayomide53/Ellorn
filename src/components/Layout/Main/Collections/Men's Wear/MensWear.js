@@ -13,7 +13,7 @@ const MensWear = (props) => {
   } else {
     return (
       <section className="lg:max-w-[78rem] md:max-w-[88rem] m-auto  my-[2rem]">
-        <ul className="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[5rem] md:gap-[2.8rem] place-items-center">
+        <ul className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] md:gap-[2.8rem] place-items-center">
           {props.wears.map((items) => (
             <Card
               key={items.id}
