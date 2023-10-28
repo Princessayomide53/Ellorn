@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../../../../UI/Cards";
 import { CiStar } from "react-icons/ci";
 import SwiperComponent from "../../SwiperComponent";
 
 const MensWear = (props) => {
-  if (window.innerWidth < 768) {
-    return (
-      <section className="lg:max-w-[78rem] md:max-w-[88rem] m-auto  my-[2rem]">
+  const [enableSwiper, setEnableSwiper] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setEnableSwiper(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return (
+    <section className="lg:max-w-[78rem] md:max-w-[88rem] m-auto  my-[2rem]">
+      {enableSwiper ? (
         <SwiperComponent items={props.wears} />
-      </section>
-    );
-  } else {
-    return (
-      <section className="lg:max-w-[78rem] md:max-w-[88rem] m-auto  my-[2rem]">
+      ) : (
         <ul className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] md:gap-[2.8rem] place-items-center">
           {props.wears.map((items) => (
             <Card
@@ -63,9 +72,9 @@ const MensWear = (props) => {
             </Card>
           ))}
         </ul>
-      </section>
-    );
-  }
+      )}
+    </section>
+  );
 };
 
 export default MensWear;
