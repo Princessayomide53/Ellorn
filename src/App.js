@@ -11,12 +11,23 @@ import Socials from "./components/Layout/Main/Socials";
 import Testimonials from "./components/Layout/Main/Testimonials";
 import Footer from "./components/Layout/Footer/Footer";
 import MiniFooter from "./components/Layout/Footer/MiniFooter";
+import Cart from "./components/Cart/Cart";
+import { useState } from "react";
 
 function App() {
+  const [showCart, setShowCart] = useState(false);
+
+  const showHandler = () => {
+    setShowCart(true);
+  };
+  const hideHandler = () => {
+    setShowCart(false);
+  };
   return (
     <>
       {" "}
-      <Nav />
+      <Nav onShowCart={showHandler} />
+      {showCart && <Cart onClose={hideHandler} />}
       <div className="">
         <Header />
         <Logo />
