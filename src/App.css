@@ -34,3 +34,16 @@ hr.custom-hr {
     transform: translateY(0);
   }
 }
+.logo {
+  animation: linearMotion 8s linear infinite;
+}
+
+@keyframes linearMotion {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
