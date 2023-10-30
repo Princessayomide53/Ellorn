@@ -13,9 +13,9 @@ import MiniFooter from "./components/Layout/Footer/MiniFooter";
 import Cart from "./components/Cart/Cart";
 import { useState } from "react";
 import { CartProvider } from "./store/CartProvider";
-import MensWear from "./components/Layout/Main/Collections/Men's Wear/MensWear";
+// import MensWear from "./components/Layout/Main/Collections/Men's Wear/MensWear";
 
-function App(props) {
+function App() {
   const [showCart, setShowCart] = useState(false);
 
   const showHandler = () => {
@@ -28,7 +28,7 @@ function App(props) {
     <CartProvider>
       {" "}
       <Nav onShowCart={showHandler} />
-      {showCart && <Cart onClose={hideHandler} />}
+      {showCart && <Cart onHideCart={hideHandler} />}
       <Header />
       <Logo />
       <Main />

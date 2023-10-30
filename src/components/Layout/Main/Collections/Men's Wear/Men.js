@@ -130,7 +130,7 @@ const Men = () => {
   return (
     <div className="overflow-hidden w-full">
       <MensWear wears={dummy_Wears} />
-      <Cart products={dummy_Wears} />
+      {/* <Cart products={dummy_Wears} /> */}
     </div>
   );
 };
