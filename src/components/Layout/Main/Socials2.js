@@ -41,8 +41,13 @@ const Socials2 = () => {
   return (
     <section className="lg:max-w-[80rem] m-auto">
       <div className="grid grid-cols-7 h-[100%] place-content-center place-items-center">
-        {pictures.map((image) => (
-          <img src={image.img} alt="" className="w-[13.5rem] object-cover" />
+        {pictures.map((images) => (
+          <img
+            src={images.img}
+            alt=""
+            key={images.id}
+            className="w-[13.5rem] object-cover"
+          />
         ))}
       </div>
     </section>

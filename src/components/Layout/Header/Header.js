@@ -8,7 +8,7 @@ import "../../../App.css";
 const Header = () => {
   return (
     <section className="lg:max-w-[80rem] md:max-w-[88rem] max-w-[90rem] m-auto">
-      <div className="grid-cols-3 grid place-content-center place-items-center sm:my-[3rem] my-[1rem]">
+      <div className="grid-cols-3 grid place-content-center place-items-center sm:my-[3rem] my-[1rem] mt-[4.5rem] sm:mt-[7.8rem]">
         <div className="">
           <img
             src={images}

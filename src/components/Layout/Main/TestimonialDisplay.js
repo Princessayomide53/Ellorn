@@ -16,13 +16,13 @@ const testmonials = [
       "“You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!”",
   },
   {
-    id: 1,
+    id: 2,
     img: Test1,
     description:
       "“You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!”",
   },
   {
-    id: 2,
+    id: 3,
     img: Test2,
     description:
       "“Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.”!",

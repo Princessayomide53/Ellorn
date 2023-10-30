@@ -12,6 +12,7 @@ import men10 from "../../../../../assets/men10.jpg";
 import men11 from "../../../../../assets/men11.jpg";
 // import men12 from "../../../../../assets/men12.jpg";
 import MensWear from "../Men's Wear/MensWear";
+import Cart from "../../../../Cart/Cart";
 
 const dummy_Wears = [
   {
@@ -129,6 +130,7 @@ const Men = () => {
   return (
     <div className="overflow-hidden w-full">
       <MensWear wears={dummy_Wears} />
+      <Cart products={dummy_Wears} />
     </div>
   );
 };

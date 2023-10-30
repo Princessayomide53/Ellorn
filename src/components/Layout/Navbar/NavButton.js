@@ -3,10 +3,8 @@ import { GiShoppingCart } from "react-icons/gi";
 import CartContext from "../../../store/cart-context";
 
 const NavButton = (props) => {
-  const cartCtx = useContext(CartContext);
-  const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
-    return curNumber + item.amount;
-  }, 0);
+  const ctx = useContext(CartContext);
+  const numberOfCartItems = ctx.items.length;
   return (
     <button
       className="flex sm:space-x-3 space-x-3 sm:px-[3rem] px-[1rem] py-[0.35rem] sm:py-[0.75rem] bg-black text-white rounded-full sm:-mt-2"
