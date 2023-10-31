@@ -4,23 +4,24 @@ import CartItem from "./CartItem";
 import CartContext from "../../store/cart-context";
 
 const Cart = (props) => {
-  const itemCtx = useContext(CartContext);
-  const hasItems = itemCtx.items.length > 0;
-  const product = (
+  const cartsCtx = useContext(CartContext);
+  const hasItems = cartsCtx.items.length > 0;
+
+  const productItems = (
     <ul className="max-h-[35rem] overflow-hidden overflow-y-scroll">
-      {itemCtx.items.map((shop) => (
+      {cartsCtx.items.map((cart) => (
         <CartItem
-          key={shop.key}
-          img={shop.img}
-          description={shop.description}
-          amount={shop.amount}
+          key={cart.id}
+          img={cart.img}
+          description={cart.description}
+          amount={cart.amount}
         />
       ))}
     </ul>
   );
   return (
     <Modal onClose={props.onHideCart}>
-      {product}
+      {productItems}
       <div className="flex justify-between items-center text-[1.5rem] my-[1rem] mx-0">
         <span className="text-2xl font-bold">Total Amount</span>
         {/* <span className="text-2xl font-bold">{totalAmount}</span> */}

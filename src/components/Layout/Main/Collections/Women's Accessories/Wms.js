@@ -1,5 +1,4 @@
 import React from "react";
-import WmsAccessories from "./WmsAccessories";
 import earring from "../../../../../assets/earring.jpg";
 import accessory1 from "../../../../../assets/accessory1.jpg";
 import accessory2 from "../../../../../assets/accessory2.jpg";
@@ -13,6 +12,8 @@ import accessory9 from "../../../../../assets/accessory9.jpg";
 import guccimani from "../../../../../assets/guccimani.jpg";
 import femalering from "../../../../../assets/femalering.jpg";
 import MensWear from "../Men's Wear/MensWear";
+import CartContext from "../../../../../store/cart-context";
+import { useContext } from "react";
 
 const dummy_Accessories = [
   {
@@ -116,10 +117,18 @@ const dummy_Accessories = [
   },
 ];
 
-const Wms = () => {
+const Wms = (props) => {
+  const cartItemCtx = useContext(CartContext);
+  const addToCartHandler = () => {
+    cartItemCtx.addCart({
+      id: props.id,
+      description: props.description,
+      amount: props.amount,
+    });
+  };
   return (
     <div>
-      <MensWear wears={dummy_Accessories} />
+      <MensWear wears={dummy_Accessories} onAddCart={addToCartHandler} />
     </div>
   );
 };

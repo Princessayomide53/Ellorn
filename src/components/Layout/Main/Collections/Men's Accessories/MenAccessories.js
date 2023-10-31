@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Access1 from "../../../../../assets/Access1.jpg";
 import Access2 from "../../../../../assets/Access2.jpg";
@@ -11,6 +11,7 @@ import ring from "../../../../../assets/ring.jpg";
 import necklace from "../../../../../assets/necklace.jpg";
 // import accessory10 from "../../../../../assets/accessory10.jpg";
 import MensWear from "../Men's Wear/MensWear";
+import CartContext from "../../../../../store/cart-context";
 
 const dummy_MenAccessories = [
   {
@@ -96,10 +97,18 @@ const dummy_MenAccessories = [
   // },
 ];
 
-const MenAccessories = () => {
+const MenAccessories = (props) => {
+  const cartItemCtx = useContext(CartContext);
+  const addToCartHandler = () => {
+    cartItemCtx.addCart({
+      id: props.id,
+      description: props.description,
+      amount: props.amount,
+    });
+  };
   return (
     <div>
-      <MensWear wears={dummy_MenAccessories} />
+      <MensWear wears={dummy_MenAccessories} onAddCart={addToCartHandler} />
     </div>
   );
 };

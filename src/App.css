@@ -34,7 +34,7 @@ hr.custom-hr {
     transform: translateY(0);
   }
 }
-.logo {
+.logos {
   animation: linearMotion 8s linear infinite;
 }
 

@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import Card from "../../UI/Cards";
 import { CiStar } from "react-icons/ci";
+import CartContext from "../../../store/cart-context";
 
 const SwiperComponent = ({ items }) => {
+  const cartItemCtx = useContext(CartContext);
+  const addToCartHandler = (item) => {
+    cartItemCtx.addCart({
+      id: item.id,
+      img: item.img,
+      description: item.description,
+      amount: item.amount,
+    });
+  };
   return (
     <div className="swiper-container">
       <Swiper
