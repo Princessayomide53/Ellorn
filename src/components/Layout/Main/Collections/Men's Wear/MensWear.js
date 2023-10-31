@@ -82,7 +82,9 @@ const MensWear = (props) => {
                   </p>
 
                   <button
-                    onClick={addToCartHandler}
+                    onClick={() => {
+                      addToCartHandler(item);
+                    }}
                     className="px-5 rounded-2xl -m-2 lg:text-base md:text-[0.75rem] text-[0.65rem] bg-[#484848] text-white "
                   >
                     Add +

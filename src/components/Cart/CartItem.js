@@ -21,10 +21,10 @@ const CartItem = (props) => {
             Price: $ {props.amount}
           </span>
 
-          {/* <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
+          <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
             {" "}
-            x {props.amount}
-          </span> */}
+            {props.shouldRender}
+          </span>
         </div>
       </div>
       <div className="flex md:flex-row font-bold text-[#8a2b06] space-x-5 text-2xl m-[0.75rem] ">

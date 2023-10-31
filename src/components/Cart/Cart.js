@@ -5,6 +5,8 @@ import CartContext from "../../store/cart-context";
 
 const Cart = (props) => {
   const cartsCtx = useContext(CartContext);
+  const totalAmount = `$${cartsCtx.totalAmount.toFixed(2)} `;
+
   const hasItems = cartsCtx.items.length > 0;
 
   const productItems = (
@@ -12,9 +14,11 @@ const Cart = (props) => {
       {cartsCtx.items.map((cart) => (
         <CartItem
           key={cart.id}
+          id={cart.id}
           img={cart.img}
           description={cart.description}
           amount={cart.amount}
+          shouldRender={cart.shouldRender}
         />
       ))}
     </ul>
@@ -24,7 +28,7 @@ const Cart = (props) => {
       {productItems}
       <div className="flex justify-between items-center text-[1.5rem] my-[1rem] mx-0">
         <span className="text-2xl font-bold">Total Amount</span>
-        {/* <span className="text-2xl font-bold">{totalAmount}</span> */}
+        <span className="text-2xl font-bold">{totalAmount}</span>
       </div>
       <div className="text-right">
         <button
