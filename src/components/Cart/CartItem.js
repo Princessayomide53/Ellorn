@@ -2,6 +2,7 @@ import React from "react";
 // import CartContext from "../../store/cart-context";
 
 const CartItem = (props) => {
+  const price = `$${props.amount}`;
   return (
     <li
       className="flex justify-between items-center border-b-2 border-[#8a2b06] py-[1rem] px-0 my-[1rem] mx-0 "
@@ -17,10 +18,11 @@ const CartItem = (props) => {
           {props.description}
         </h2>
         <div className="w-[10rem] justify-between items-center flex">
-          <span className="font-bold text-[#8a2b06]">
-            Price: $ {props.amount}
+          <span className="font-bold text-[#8a2b06]">Price: {price}</span>
+          <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
+            {" "}
+            x {props.amount}
           </span>
-
           <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
             {" "}
             {props.shouldRender}

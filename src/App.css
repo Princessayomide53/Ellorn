@@ -35,7 +35,7 @@ hr.custom-hr {
   }
 }
 .logos {
-  animation: linearMotion 8s linear infinite;
+  animation: linearMotion 5s linear infinite;
 }
 
 @keyframes linearMotion {

@@ -7,18 +7,23 @@ const Cart = (props) => {
   const cartsCtx = useContext(CartContext);
   const totalAmount = `$${cartsCtx.totalAmount.toFixed(2)} `;
 
+  const cartItemAddHandler = () => {};
+  const cartItemRemoveHandler = () => {};
+
   const hasItems = cartsCtx.items.length > 0;
 
   const productItems = (
     <ul className="max-h-[35rem] overflow-hidden overflow-y-scroll">
-      {cartsCtx.items.map((cart) => (
+      {cartsCtx.items.map((item) => (
         <CartItem
-          key={cart.id}
-          id={cart.id}
-          img={cart.img}
-          description={cart.description}
-          amount={cart.amount}
-          shouldRender={cart.shouldRender}
+          key={item.id}
+          id={item.id}
+          img={item.img}
+          description={item.description}
+          amount={item.amount}
+          shouldRender={item.shouldRender}
+          onRemove={cartItemRemoveHandler.bind(null, item)}
+          onAdd={cartItemAddHandler.bind(null, item)}
         />
       ))}
     </ul>
