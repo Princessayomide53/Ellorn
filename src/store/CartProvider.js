@@ -24,7 +24,6 @@ const cartReducer = (state, action) => {
       updatedItems = [...state.items];
       updatedItems[existingCartIndex] = updatedItem;
     } else {
-      // updatedItem = { ...action.item };
       updatedItems = state.items.concat({ ...action.items, quantity: 1 });
     }
 
@@ -32,6 +31,8 @@ const cartReducer = (state, action) => {
       items: updatedItems,
       totalAmount: updatedTotalAmount,
     };
+  }
+  if (action.type === "REMOVE") {
   }
   return defaultState;
 };

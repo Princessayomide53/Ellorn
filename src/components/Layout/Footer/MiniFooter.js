@@ -8,7 +8,7 @@ const MiniFooter = () => {
           <h2 className="text-[#484848] font-serif lg:text-[2rem] md:text-[1.2rem] text-[2rem] font-normal">
             Ellorn
           </h2>
-          <div className="flex lg:items-end  sm:flex-row  sm:space-x-[3rem] flex-col space-y-[2rem]">
+          <div className="flex md:items-end  sm:flex-row  sm:space-x-[3rem] flex-col space-y-[2rem]">
             <p className="sm:text-[1rem] text-[0.65rem]">support center</p>
             <p className="sm:text-[1rem] text-[0.65rem]">invoicing</p>
             <p className="sm:text-[1rem] text-[0.65rem]">Careers</p>

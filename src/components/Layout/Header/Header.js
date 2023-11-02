@@ -13,25 +13,25 @@ const Header = () => {
           <img
             src={images}
             alt=""
-            className="xl:h-[47rem] xl:w-[24.5rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
+            className="xl:h-[47rem] xl:w-[24.5rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[26.5rem] w-[6.5rem] h-[19.5rem]"
           />
         </div>
-        <div className="">
+        <div className="flex justify-center flex-col items-center">
           <img
             src={image3}
             alt=""
             className="lg:w-[24.9375rem] lg:h-[9.0625rem] md:w-[15rem] md:h-[5rem] w-[7.5rem] h-[3rem]"
           />
-          <h2 className="text-[#484848] text-center lg:text-[5.5rem] xl:text-[5.6875rem] md:text-[3.6875rem] text-[2rem] tracking-tight font-medium">
+          <h2 className="text-[#484848] text-center lg:text-[5.5rem] xl:text-[5.6875rem] md:text-[2.8875rem] text-[2rem] tracking-tight font-medium">
             ULTIMATE
           </h2>
-          <h2 className="text-center text-[#484848] lg:text-[9.5rem] xl:text-[11.2875rem] md:text-[7.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[9.5rem] xl:text-[11.2875rem] md:text-[5.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
             SALE
           </h2>
-          <p className="text-center text-[#484848] font-normal sm:text-[1.25rem] text-[0.65rem] tracking-[0.125rem]">
+          <p className="text-center text-[#484848] font-normal md:text-[0.85rem] md:mt-3 lg:mt-0 lg:text-[1.25rem] text-[0.65rem] tracking-[0.125rem]">
             NEW COLLECTION
           </p>
-          <div className="flex justify-center py-5">
+          <div className="flex justify-center py-4">
             <button className="mx-auto sm:px-12 sm:py-3 px-7 py-2 bg-black text-white rounded-md sm:text-[1rem] text-[0.55rem">
               Shop Now
             </button>
@@ -47,7 +47,7 @@ const Header = () => {
           <img
             src={image2}
             alt=""
-            className="xl:h-[47rem] xl:w-[24.5rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[30.5rem] w-[6.5rem] h-[19.5rem]"
+            className="xl:h-[47rem] xl:w-[24.5rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[26.5rem] w-[6.5rem] h-[19.5rem]"
           />
         </div>
       </div>
