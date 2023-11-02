@@ -7,7 +7,9 @@ const Cart = (props) => {
   const cartsCtx = useContext(CartContext);
   const totalAmount = `$${cartsCtx.totalAmount.toFixed(2)} `;
 
-  const cartItemAddHandler = () => {};
+  const cartItemAddHandler = (items) => {
+    cartsCtx.addCart(items);
+  };
   const cartItemRemoveHandler = () => {};
 
   const hasItems = cartsCtx.items.length > 0;

@@ -40,7 +40,7 @@ const CartItem = (props) => {
           -
         </button>
         <button
-          //   onClick={props.onAdd}
+          onClick={props.onAdd}
           className="border-2 border-[#8a2b06] px-[0.75rem] rounded-md"
         >
           +
