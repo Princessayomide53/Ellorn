@@ -14,18 +14,21 @@ const CartItem = (props) => {
           alt="product-images"
           className="w-[8rem] h-[5rem]"
         />
-        <h2 className="text-lg font-bold mb-[0.5rem] text-[#363636]">
+        <h2 className="text-lg font-bold my-[0.5rem] text-[#363636]">
           {props.description}
         </h2>
-        <div className="w-[10rem] justify-between items-center flex">
-          <span className="font-bold text-[#8a2b06]">Price: {price}</span>
-          <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
-            {" "}
-            x {props.amount}
+        <div className="w-[12rem] justify-between items-center flex space-x-2 ">
+          <span className="font-bold text-[#8a2b06] text-[1.1rem]">
+            Price: {price}
           </span>
-          <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
+
+          {/* <span className="font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.25rem] px-[0.75rem]">
             {" "}
             {props.shouldRender}
+          </span> */}
+          <span className=" flex justify-end font-bold border-2 border-[#ccc] rounded-md text-[#363636] py-[0.2rem] px-[0.75rem]">
+            {" "}
+            x {props.quantity}
           </span>
         </div>
       </div>

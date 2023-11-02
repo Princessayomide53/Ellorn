@@ -22,6 +22,7 @@ const Cart = (props) => {
           description={item.description}
           amount={item.amount}
           shouldRender={item.shouldRender}
+          quantity={item.quantity}
           onRemove={cartItemRemoveHandler.bind(null, item)}
           onAdd={cartItemAddHandler.bind(null, item)}
         />

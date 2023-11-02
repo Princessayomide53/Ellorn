@@ -16,6 +16,7 @@ const MensWear = (props) => {
       description: item.description,
       amount: item.amount,
       shouldRender: item.shouldRender,
+      quantity: 1,
     });
   };
 

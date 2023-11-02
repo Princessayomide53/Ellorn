@@ -19,13 +19,13 @@ const cartReducer = (state, action) => {
     if (existingCart) {
       const updatedItem = {
         ...existingCart,
-        quantity: existingCart + action.items.quantity,
+        quantity: existingCart.quantity + 1,
       };
       updatedItems = [...state.items];
       updatedItems[existingCartIndex] = updatedItem;
     } else {
       // updatedItem = { ...action.item };
-      updatedItems = state.items.concat(action.items);
+      updatedItems = state.items.concat({ ...action.items, quantity: 1 });
     }
 
     return {

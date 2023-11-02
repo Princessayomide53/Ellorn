@@ -24,6 +24,7 @@ const dummy_Wears = [
     brand: "Fendi",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 2,
@@ -34,6 +35,7 @@ const dummy_Wears = [
     brand: "Dolce & Gabbana",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 3,
@@ -44,6 +46,7 @@ const dummy_Wears = [
     brand: "Dior",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ const dummy_Wears = [
     brand: "Valentino",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 5,
@@ -64,6 +68,7 @@ const dummy_Wears = [
     brand: "Prada",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 6,
@@ -74,6 +79,7 @@ const dummy_Wears = [
     brand: "Lacoste",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 7,
@@ -84,6 +90,7 @@ const dummy_Wears = [
     brand: "Givenchy",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 8,
@@ -104,6 +111,7 @@ const dummy_Wears = [
     brand: "Burberry",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 10,
@@ -114,6 +122,7 @@ const dummy_Wears = [
     brand: "Armani",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
   {
     id: 11,
@@ -124,6 +133,7 @@ const dummy_Wears = [
     brand: "H&M",
     reviews: "(41k) customers review",
     shouldRender: true,
+    quantity: 1,
   },
 ];
 const Men = () => {
