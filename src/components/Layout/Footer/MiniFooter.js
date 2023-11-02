@@ -5,7 +5,7 @@ const MiniFooter = () => {
     <section className="border-t-2 border-[#DEDFE1] pt-[1.88rem]">
       <div className="lg:max-w-[60rem] xl:max-w-[80rem] md:max-w-[88rem] m-auto max-w-[90rem] sm:px-0 px-[1.2rem]">
         <div className="flex lg:justify-between md:justify-around justify-between pb-[3.12rem]">
-          <h2 className="text-[#484848] font-serif lg:text-[2rem] md:text-[1.2rem] text-[2rem] font-normal">
+          <h2 className="text-[#484848] font-serif lg:text-[2rem] md:text-[1.2rem] text-[2rem] font-normal flex items-end">
             Ellorn
           </h2>
           <div className="flex md:items-end  sm:flex-row  sm:space-x-[3rem] flex-col space-y-[2rem]">
