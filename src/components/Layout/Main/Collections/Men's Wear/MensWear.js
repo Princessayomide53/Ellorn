@@ -47,11 +47,11 @@ const MensWear = (props) => {
   }, []);
 
   return (
-    <section className="lg:max-w-[78rem] md:max-w-[88rem] m-auto  my-[2rem]">
+    <section className="lg:max-w-[78rem] md:max-w-[50rem] m-auto  my-[2rem]">
       {enableSwiper ? (
         <SwiperComponent items={props.wears} />
       ) : (
-        <ul className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] md:gap-[2.8rem] place-items-center">
+        <ul className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] md:gap-[2rem] place-items-center">
           {props.wears.map((item) => (
             <Card
               key={item.id}
@@ -100,7 +100,7 @@ const MensWear = (props) => {
                     <select
                       value={selected}
                       onChange={handleChange}
-                      className="border-2 border-black cursor-pointer rounded-md lg:p-1 md:p-0"
+                      className="border-2 border-black cursor-pointer rounded-md lg:p-1 md:p-0 text-[0.8rem]"
                     >
                       <option value="">Select </option>
                       <option value="s">small</option>

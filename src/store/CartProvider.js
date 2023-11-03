@@ -12,6 +12,7 @@ const cartReducer = (state, action) => {
     const existingCartIndex = state.items.findIndex(
       (item) => item.id === action.items.id
     );
+
     const existingCart = state.items[existingCartIndex];
 
     let updatedItems;
@@ -22,6 +23,7 @@ const cartReducer = (state, action) => {
         quantity: existingCart.quantity + 1,
       };
       updatedItems = [...state.items];
+
       updatedItems[existingCartIndex] = updatedItem;
     } else {
       updatedItems = state.items.concat({ ...action.items, quantity: 1 });
@@ -32,8 +34,36 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount,
     };
   }
+
   if (action.type === "REMOVE") {
+    const existingCartIndex = state.items.findIndex(
+      (items) => items.id === action.id
+    );
+
+    const existingItem = state.items[existingCartIndex];
+
+    let updatedNewItems;
+    let updatedNewTotalAmount;
+
+    if (existingItem.quantity === 1) {
+      updatedNewItems = state.items.filter((item) => item.id !== action.id);
+      updatedNewTotalAmount = state.totalAmount - existingItem.amount;
+    } else {
+      const updatedNewItem = {
+        ...existingItem,
+        quantity: existingItem.quantity - 1,
+      };
+      updatedNewItems = [...state.items];
+      updatedNewItems[existingCartIndex] = updatedNewItem;
+      updatedNewTotalAmount = state.totalAmount - existingItem.amount;
+    }
+
+    return {
+      items: updatedNewItems,
+      totalAmount: updatedNewTotalAmount,
+    };
   }
+
   return defaultState;
 };
 
@@ -41,10 +71,10 @@ export const CartProvider = (props) => {
   const [cartState, dispatchCart] = useReducer(cartReducer, defaultState);
 
   const addItemsHandler = (items) => {
-    dispatchCart({ type: "ADD", items: items });
+    dispatchCart({ type: "ADD", items });
   };
   const removeItemsHandler = (id) => {
-    dispatchCart({ type: "REMOVE", id: id });
+    dispatchCart({ type: "REMOVE", id });
   };
 
   const cartContext = {

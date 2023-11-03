@@ -34,7 +34,7 @@ const CartItem = (props) => {
       </div>
       <div className="flex md:flex-row font-bold text-[#8a2b06] space-x-5 text-2xl m-[0.75rem] ">
         <button
-          //   onClick={props.onRemove}
+          onClick={props.onRemove}
           className="border-2 border-[#8a2b06] px-[0.75rem] rounded-md"
         >
           -
