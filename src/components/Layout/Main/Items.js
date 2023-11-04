@@ -18,8 +18,8 @@ const Items = () => {
     setImagesIndex((index) => (index === Images.length - 1 ? 0 : index + 1));
   };
   return (
-    <section className="flex lg:space-x-[3.5rem] md:space-x-[2.5rem] space-x-[1.3rem] sm:pr-0 pr-7">
-      <div className="flex sm:space-x-[1.5rem] space-x-[1rem] justify-end items-end">
+    <section className="flex flex-row-reverse md:flex-row lg:space-x-[3.5rem] md:space-x-[2.5rem] sm:pr-0 pr-16">
+      <div className="flex sm:space-x-[1.5rem] space-x-[0.8rem] justify-end items-end ml-[1.5rem]">
         <MdOutlineKeyboardArrowLeft
           className="bg-white mx-1 my-1 shadow-xl lg:text-2xl md:text-base rounded-full cursor-pointer text-black z-20"
           onClick={prevIndex}
@@ -33,7 +33,7 @@ const Items = () => {
       <img
         src={Images[imagesIndex]}
         alt=""
-        className="lg:w-[25rem] lg:h-[35rem] md:w-[13.5rem] w-[10rem] h-[15.5rem] md:h-[22.5rem] transition duration-300 ease-in-out object-cover"
+        className="lg:w-[25rem] lg:h-[35rem] md:w-[13.5rem] w-[10rem] h-[15.5rem] md:h-[22.5rem] transition duration-300 ease-in-out object-cover ml-0"
       />
     </section>
   );

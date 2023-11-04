@@ -128,12 +128,19 @@ const dummy_Accessories = [
 
 const Wms = (props) => {
   const cartItemCtx = useContext(CartContext);
-  const addToCartHandler = () => {
-    cartItemCtx.addCart({
-      id: props.id,
-      description: props.description,
-      amount: props.amount,
-    });
+  const addToCartHandler = (item) => {
+    if (item) {
+      cartItemCtx.addCart({
+        id: item.id,
+        img: item.img,
+        description: item.description,
+        amount: item.amount,
+        shouldRender: item.shouldRender,
+        quantity: 1,
+      });
+    } else {
+      console.log("Item is undefined.");
+    }
   };
   return (
     <div>
