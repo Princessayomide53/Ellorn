@@ -23,6 +23,7 @@ const dummy_Accessories = [
     description: "Hat & Necklaces",
     brand: "Tiffany & Co.",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ const dummy_Accessories = [
     description: "Bag & Bracelet",
     brand: "Meljuri",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 3,
@@ -39,6 +41,7 @@ const dummy_Accessories = [
     description: "Fancy Bag",
     brand: "BVLGARI",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 4,
@@ -47,6 +50,7 @@ const dummy_Accessories = [
     description: "Black Bag",
     brand: "Graff",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 5,
@@ -55,6 +59,7 @@ const dummy_Accessories = [
     description: "Gold Earring",
     brand: "Chopard",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ const dummy_Accessories = [
     description: "Sets of Necklace",
     brand: "Orelia",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 7,
@@ -71,6 +77,7 @@ const dummy_Accessories = [
     description: "Face Cover",
     brand: "Cartier",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 8,
@@ -79,6 +86,7 @@ const dummy_Accessories = [
     description: "Pearl Necklace",
     brand: "David Yurman",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 9,
@@ -87,6 +95,7 @@ const dummy_Accessories = [
     description: "Double Necklace",
     brand: "Buccellati",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 10,
@@ -107,7 +116,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 10,
+    id: 12,
     img: femalering,
     amount: 1000,
     description: "Silver Earring",

@@ -21,6 +21,7 @@ const dummy_MenAccessories = [
     description: "Brown Bag",
     brand: "Al Kamani",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 2,
@@ -29,6 +30,7 @@ const dummy_MenAccessories = [
     description: "Wizard Hat",
     brand: "Wizzry Lux",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ const dummy_MenAccessories = [
     description: "Bracelets",
     brand: "BLG",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 4,
@@ -45,6 +48,7 @@ const dummy_MenAccessories = [
     description: "Diamond Ring",
     brand: "Graff",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 5,
@@ -53,6 +57,7 @@ const dummy_MenAccessories = [
     description: "Ray Shade",
     brand: "Oakley",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 6,
@@ -61,6 +66,7 @@ const dummy_MenAccessories = [
     description: "Gold Necklace",
     brand: "Orelia",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 7,
@@ -69,6 +75,7 @@ const dummy_MenAccessories = [
     description: "Luxury Watch",
     brand: "Cartier",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 8,
@@ -77,6 +84,7 @@ const dummy_MenAccessories = [
     description: "Black Shade",
     brand: "Ray-Ban",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   {
     id: 9,
@@ -85,6 +93,7 @@ const dummy_MenAccessories = [
     description: "Royal Ring",
     brand: "Buccellati",
     reviews: "(41k) customers review",
+    shouldRender: false,
   },
   // {
   //   id: 10,
