@@ -13,7 +13,6 @@ const Slider = () => {
           alt=""
           className="w-full lg:h-[32rem] md:h-[25rem] lg:flex-shrink-0 h-[14.5rem]"
         />
-        {/* <div className="flex justify-evenly z-10"> */}{" "}
         <img
           src={image}
           alt=""
@@ -29,7 +28,7 @@ const Slider = () => {
           <p className="text-[#000] sm:text-[1rem] text-[0.6rem] underline uppercase leading-normal">
             description
           </p>
-          <p className="text-[#767676] lg:text-[0.7rem] xl:text-[0.95rem] md:text-[0.57rem] text-[0.3rem] font-normal leading-normal">
+          <p className="text-[#767676] lg:text-[0.7rem] xl:text-[0.95rem] md:text-[0.57rem] text-[0.2799rem] font-normal leading-normal w-36 md:w-full">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             <br /> Scelerisque duis ultrices sollicitudin aliquam sem.
             Scelerisque
@@ -51,7 +50,6 @@ const Slider = () => {
           </button>
         </div>
       </div>
-      {/* </div> */}
     </section>
   );
 };

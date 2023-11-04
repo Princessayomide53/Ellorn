@@ -45,7 +45,7 @@ const Features = () => {
             alt=""
             className="lg:w-[2.375rem] lg:h-[3.125rem] md:w-[1.5rem] md:h-[2.3rem] w-[0.75rem] h-[0.85rem]"
           />
-          <p className="lg:text-[1.2rem] md:text-[0.65rem] text-[0.45rem] font-medium text-[#484848] leading-normal">
+          <p className="lg:text-[1.2rem] md:text-[0.65rem] text-[0.35rem] font-medium text-[#484848] leading-normal">
             {item.title} <br />
             <span className="lg:text-[0.95rem] md:text-[0.75rem] text-[0.35rem] font-normal text-[#484848] sm:leading-[1.625rem] pt-3 sm:pt-0">
               {item.text}

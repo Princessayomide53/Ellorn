@@ -14,18 +14,24 @@ const testmonials = [
     img: Test1,
     description:
       "“You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!”",
+    name: "James K",
+    occupation: "Traveler",
   },
   {
     id: 2,
     img: Test1,
     description:
       "“You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!”",
+    name: "Maccaulay LH",
+    occupation: "Web Developer",
   },
   {
     id: 3,
     img: Test2,
     description:
       "“Just what I was looking for. Thank you for making it painless, pleasant and most of all hassle free! All products are great.”!",
+    name: "Karen W",
+    occupation: "Content-Creator",
   },
 ];
 
@@ -37,12 +43,12 @@ const TestimonialDisplay = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper lg:w-[45rem] md:w-[35rem] bg-blend-color sm:h-[25rem] h-[15rem]  rounded-md w-[18rem]"
+          className="mySwiper lg:w-[45rem] md:w-[35rem] bg-blend-color sm:h-[25rem] h-[12rem]  rounded-lg w-[18rem]"
         >
           {testmonials.map((data) => (
             <SwiperSlide key={data.id} className="bg-white">
               <div className="">
-                <Card className="lg:w-[45rem] w-[18rem] sm:h-[25rem] h-[20rem] md:w-[35rem] lg:py-[3rem] md:py-[2.5rem] py-[2.5rem] m-auto justify-evenly flex bg-white rounded-lg">
+                <Card className="lg:w-[45rem] w-[18rem] sm:h-[25rem] h-[15rem] md:w-[35rem] lg:py-[3rem] md:py-[2.5rem] py-[2.5rem] m-auto justify-evenly flex bg-white rounded-lg">
                   <img
                     src={data.img}
                     alt="pictures"
@@ -56,14 +62,14 @@ const TestimonialDisplay = () => {
                     <img
                       src={stars}
                       alt="pictures"
-                      className="w-[5.937rem]  h-[1.1875rem] mb-[2rem] mt-2 sm:mt-0 object-cover"
+                      className="w-[5.937rem]  md:h-[1.1875rem] h-[0.8777rem] md:mb-[2rem] mb-[0.85rem] mt-3 sm:mt-0 object-cover"
                     />
                     <hr className="custom-hr" />
-                    <p className="text-[#484848] ltext-[2rem] font-serif font-normal leading-normal pt-5">
-                      James K
+                    <p className="text-[#484848] md:text-[2rem] text-[0.78rem] font-serif font-normal leading-normal md:pt-5 pt-3">
+                      {data.name}
                     </p>
-                    <p className="text-[#484848] text-[1rem] font-normal leading-normal">
-                      Traveler
+                    <p className="text-[#484848] md:text-[1rem] text-[0.5rem] font-normal leading-normal">
+                      {data.occupation}
                     </p>
                   </div>
                 </Card>
