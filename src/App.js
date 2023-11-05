@@ -13,8 +13,7 @@ import Footer from "./components/Layout/Footer/Footer";
 import MiniFooter from "./components/Layout/Footer/MiniFooter";
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./store/CartProvider";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CheckOut from "./components/Payment/CheckOut";
+// import RouterComponent from "./components/Layout/RouterComponent";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -28,7 +27,6 @@ function App() {
   }, []);
   return (
     <CartProvider>
-      {" "}
       <Nav onShowCart={showHandler} />
       {showCart && <Cart onHideCart={hideHandler} />}
       <Header />
@@ -41,11 +39,7 @@ function App() {
       <Testimonials />
       <Footer />
       <MiniFooter />
-      <Router>
-        <Routes>
-          <Route path="/checkout" element={<CheckOut />} />
-        </Routes>
-      </Router>
+      {/* <RouterComponent /> */}
     </CartProvider>
   );
 }

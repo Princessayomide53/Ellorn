@@ -55,9 +55,7 @@ const cartReducer = (state, action) => {
       };
       updatedNewItems = [...state.items];
       updatedNewItems[existingCartIndex] = updatedNewItem;
-      updatedNewTotalAmount = (state.totalAmount - existingItem.amount).toFixed(
-        2
-      );
+      updatedNewTotalAmount = state.totalAmount - existingItem.amount;
     }
 
     return {

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import CartContext from "../../store/cart-context";
+import { Link } from "react-router-dom";
 
 const Cart = (props) => {
   const cartsCtx = useContext(CartContext);
@@ -48,10 +49,13 @@ const Cart = (props) => {
         >
           Close
         </button>
+
         {hasItems && (
-          <button className="border-[#8a2b06] border-2 bg-transparent cursor-pointer font-inherit rounded-2xl ml-[1rem] py-[0.5rem] px-[2rem] hover:bg-[#5a1a01] hover:border-[#5a1a01] hover:text-white active:bg-[#5a1a01] active:border-[#5a1a01] active:text-white text-[#8a2b06]">
-            CheckOut
-          </button>
+          <Link to="/checkout">
+            <button className="border-[#8a2b06] border-2 bg-transparent cursor-pointer font-inherit rounded-2xl ml-[1rem] py-[0.5rem] px-[2rem] hover:bg-[#5a1a01] hover:border-[#5a1a01] hover:text-white active:bg-[#5a1a01] active:border-[#5a1a01] active:text-white text-[#8a2b06]">
+              CheckOut
+            </button>
+          </Link>
         )}
       </div>
     </Modal>
