@@ -14,7 +14,7 @@ import CartContext from "../../../../../store/cart-context";
 
 const dummy_WmsWear = [
   {
-    id: 1,
+    id: 12,
     img: Images1,
     amount: 88.1,
     description: "Shiny Dress",
@@ -23,7 +23,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 2,
+    id: 13,
     img: Images2,
     amount: 97.0,
     description: "Long Dress",
@@ -32,7 +32,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 3,
+    id: 14,
     img: Images3,
     amount: 65.32,
     description: "Full Sweater",
@@ -41,7 +41,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 4,
+    id: 15,
     img: Images4,
     amount: 77.09,
     description: "Corporate Shirt",
@@ -50,7 +50,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 5,
+    id: 16,
     img: Images5,
     amount: 55.4,
     description: "Soft Blue Top",
@@ -59,7 +59,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 6,
+    id: 17,
     img: Images6,
     amount: 50.0,
     description: "White Shirt",
@@ -68,7 +68,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 7,
+    id: 18,
     img: Images7,
     amount: 190.3,
     description: "Armless Gown",
@@ -77,7 +77,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 8,
+    id: 19,
     img: Images8,
     amount: 60.72,
     description: "Gown Hood",
@@ -86,7 +86,7 @@ const dummy_WmsWear = [
     shouldRender: true,
   },
   {
-    id: 9,
+    id: 20,
     img: Images9,
     amount: 49.74,
     description: "Armless Top",
@@ -98,18 +98,18 @@ const dummy_WmsWear = [
 const Women = () => {
   const cartItemCtx = useContext(CartContext);
   const addToCartHandler = (item) => {
-    if (item) {
-      cartItemCtx.addCart({
-        id: item.id,
-        img: item.img,
-        description: item.description,
-        amount: item.amount,
-        shouldRender: item.shouldRender,
-        quantity: 1,
-      });
-    } else {
-      console.log("Item is undefined.");
-    }
+    // if (item) {
+    cartItemCtx.addCart({
+      id: item.id,
+      img: item.img,
+      description: item.description,
+      amount: item.amount,
+      shouldRender: item.shouldRender,
+      quantity: 1,
+    });
+    // } else {
+    //   console.log("Item is undefined.");
+    // }
   };
   return (
     <div>

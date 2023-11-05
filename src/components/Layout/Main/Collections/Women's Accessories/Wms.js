@@ -17,7 +17,7 @@ import { useContext } from "react";
 
 const dummy_Accessories = [
   {
-    id: 1,
+    id: 21,
     img: accessory1,
     amount: 1889.82,
     description: "Hat & Necklaces",
@@ -26,7 +26,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 2,
+    id: 22,
     img: accessory2,
     amount: 1209.88,
     description: "Bag & Bracelet",
@@ -35,7 +35,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 3,
+    id: 23,
     img: accessory3,
     amount: 980.99,
     description: "Fancy Bag",
@@ -44,7 +44,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 4,
+    id: 24,
     img: accessory4,
     amount: 878.76,
     description: "Black Bag",
@@ -53,7 +53,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 5,
+    id: 25,
     img: accessory5,
     amount: 899.99,
     description: "Gold Earring",
@@ -62,7 +62,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 6,
+    id: 26,
     img: accessory6,
     amount: 2000,
     description: "Sets of Necklace",
@@ -71,7 +71,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 7,
+    id: 27,
     img: accessory7,
     amount: 890.62,
     description: "Face Cover",
@@ -80,7 +80,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 8,
+    id: 28,
     img: accessory8,
     amount: 2799.9,
     description: "Pearl Necklace",
@@ -89,7 +89,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 9,
+    id: 29,
     img: accessory9,
     amount: 990.32,
     description: "Double Necklace",
@@ -98,7 +98,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 10,
+    id: 30,
     img: earring,
     amount: 1000,
     description: "Silver Earring",
@@ -107,7 +107,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 11,
+    id: 31,
     img: guccimani,
     amount: 2220.0,
     description: "Gucci Bag",
@@ -116,7 +116,7 @@ const dummy_Accessories = [
     shouldRender: false,
   },
   {
-    id: 12,
+    id: 32,
     img: femalering,
     amount: 1000,
     description: "Silver Earring",
@@ -126,21 +126,21 @@ const dummy_Accessories = [
   },
 ];
 
-const Wms = (props) => {
+const Wms = () => {
   const cartItemCtx = useContext(CartContext);
   const addToCartHandler = (item) => {
-    if (item) {
-      cartItemCtx.addCart({
-        id: item.id,
-        img: item.img,
-        description: item.description,
-        amount: item.amount,
-        shouldRender: item.shouldRender,
-        quantity: 1,
-      });
-    } else {
-      console.log("Item is undefined.");
-    }
+    // if (item) {
+    cartItemCtx.addCart({
+      id: item.id,
+      img: item.img,
+      description: item.description,
+      amount: item.amount,
+      shouldRender: item.shouldRender,
+      quantity: 1,
+    });
+    // } else {
+    //   console.log("Item is undefined.");
+    // }
   };
   return (
     <div>

@@ -18,7 +18,7 @@ const Cart = (props) => {
   const hasItems = cartsCtx.items.length > 0;
 
   const productItems = (
-    <ul className="max-h-[30rem] overflow-hidden overflow-y-scroll">
+    <ul className="sm:max-h-[30rem] max-h-[20rem] overflow-hidden overflow-y-scroll">
       {cartsCtx.items.map((item) => (
         <CartItem
           key={item.id}

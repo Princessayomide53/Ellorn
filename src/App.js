@@ -12,9 +12,9 @@ import Testimonials from "./components/Layout/Main/Testimonials";
 import Footer from "./components/Layout/Footer/Footer";
 import MiniFooter from "./components/Layout/Footer/MiniFooter";
 import Cart from "./components/Cart/Cart";
-
 import { CartProvider } from "./store/CartProvider";
-// import MensWear from "./components/Layout/Main/Collections/Men's Wear/MensWear";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import CheckOut from "./components/Payment/CheckOut";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -41,6 +41,11 @@ function App() {
       <Testimonials />
       <Footer />
       <MiniFooter />
+      <Router>
+        <Routes>
+          <Route path="/checkout" element={<CheckOut />} />
+        </Routes>
+      </Router>
     </CartProvider>
   );
 }

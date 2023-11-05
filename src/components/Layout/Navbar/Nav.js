@@ -3,7 +3,7 @@ import NavButton from "./NavButton";
 
 const Nav = (props) => {
   return (
-    <nav className="fixed top-0 z-10 bg-white w-full  py-[0.5rem] xl:px-24 lg:px-16 px-4 shadow-md md:px-8">
+    <nav className="fixed top-0 z-30 bg-white w-full  py-[0.5rem] xl:px-24 lg:px-16 px-4 shadow-md md:px-8">
       <div className="flex justify-between">
         <h2 className="font-semibold sm:text-[3.25rem] text-[1.46rem] font-serif text-[#484848]">
           Ellorn

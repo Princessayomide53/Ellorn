@@ -15,7 +15,7 @@ import CartContext from "../../../../../store/cart-context";
 
 const dummy_MenAccessories = [
   {
-    id: 1,
+    id: 33,
     img: Access1,
     amount: 750.1,
     description: "Brown Bag",
@@ -24,7 +24,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 2,
+    id: 34,
     img: Access2,
     amount: 450.32,
     description: "Wizard Hat",
@@ -33,7 +33,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 3,
+    id: 35,
     img: Access3,
     amount: 620.41,
     description: "Bracelets",
@@ -42,7 +42,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 4,
+    id: 36,
     img: ring1,
     amount: 1777.99,
     description: "Diamond Ring",
@@ -51,7 +51,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 5,
+    id: 37,
     img: Spec,
     amount: 1897.65,
     description: "Ray Shade",
@@ -60,7 +60,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 6,
+    id: 38,
     img: necklace,
     amount: 999.99,
     description: "Gold Necklace",
@@ -69,7 +69,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 7,
+    id: 39,
     img: watch2,
     amount: 799.72,
     description: "Luxury Watch",
@@ -78,7 +78,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 8,
+    id: 40,
     img: spec1,
     amount: 660.9,
     description: "Black Shade",
@@ -87,7 +87,7 @@ const dummy_MenAccessories = [
     shouldRender: false,
   },
   {
-    id: 9,
+    id: 41,
     img: ring,
     amount: 1999.22,
     description: "Royal Ring",
@@ -109,18 +109,18 @@ const dummy_MenAccessories = [
 const MenAccessories = (props) => {
   const cartItemCtx = useContext(CartContext);
   const addToCartHandler = (item) => {
-    if (item) {
-      cartItemCtx.addCart({
-        id: item.id,
-        img: item.img,
-        description: item.description,
-        amount: item.amount,
-        shouldRender: item.shouldRender,
-        quantity: 1,
-      });
-    } else {
-      console.log("Item is undefined.");
-    }
+    // if (item) {
+    cartItemCtx.addCart({
+      id: item.id,
+      img: item.img,
+      description: item.description,
+      amount: item.amount,
+      shouldRender: item.shouldRender,
+      quantity: 1,
+    });
+    // } else {
+    //   console.log("Item is undefined.");
+    // }
   };
   return (
     <div>
