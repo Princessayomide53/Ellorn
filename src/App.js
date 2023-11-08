@@ -13,7 +13,6 @@ import Footer from "./components/Layout/Footer/Footer";
 import MiniFooter from "./components/Layout/Footer/MiniFooter";
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./store/CartProvider";
-// import RouterComponent from "./components/Layout/RouterComponent";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
