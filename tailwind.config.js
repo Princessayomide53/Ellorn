@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       screens: {
         surface: "540px",
+        mac: "1440px",
       },
     },
   },
