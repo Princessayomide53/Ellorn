@@ -1,10 +1,10 @@
 import React from "react";
 import NavButton from "./NavButton";
-import { motion, spring } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Nav = (props) => {
   return (
-    <nav className="fixed top-0 z-30 bg-white w-full  py-[0.5rem] xl:px-20 lg:px-16 px-4 shadow-md md:px-8">
+    <nav className="fixed top-0 z-30 bg-white w-full py-[0.5rem] mac:px-20 xl:px-8 lg:px-16 px-4 shadow-md md:px-8">
       <div className="flex justify-between">
         <motion.h2
           initial={{ y: -120, opacity: 0 }}

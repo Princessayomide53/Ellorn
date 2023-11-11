@@ -34,7 +34,7 @@ const features = [
 
 const Features = () => {
   return (
-    <Card className="bg-white flex sm:py-[2rem] py-[1rem] m-auto 2xl:max-w-[80rem] justify-around w-full shadow-lg xl:px-[5.5rem] md:px-[2.5rem] px-[1rem]">
+    <Card className="bg-white flex sm:py-[2rem] py-[1rem] m-auto 2xl:max-w-[80rem] justify-around w-full shadow-lg mac:px-[5.5rem] xl:px-[3.5rem] md:px-[2.5rem] px-[1rem]">
       {features.map((item) => (
         <div
           className="flex sm:space-x-3 space-x-2  lg:max-w-[80rem] md:max-w-[88rem] max-w-[90rem]"

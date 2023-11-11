@@ -5,7 +5,7 @@ import Items from "./Items";
 const Main = () => {
   return (
     <main className="background w-full h-full">
-      <div className="lg:max-w-[60rem] xl:max-w-[78rem] md:max-w-[88rem] m-auto py-[3.5rem] max-w-[90rem]  flex lg:justify-around xl:space-x-[17rem] md:justify-around flex-col justify-center items-center space-y-[3rem] sm:flex-row">
+      <div className="lg:max-w-[60rem] xl:max-w-[78rem] md:max-w-[88rem] m-auto py-[3.5rem] max-w-[90rem]  flex lg:justify-around mac:space-x-[17rem] xl:space-x-[8.5rem] md:justify-around flex-col justify-center items-center space-y-[3rem] sm:flex-row">
         <div className="text-left">
           <h1 className="text-[#484848] lg:text-[2.4rem] xl:text-[2.85rem] md:text-[1.8rem] text-[1.9rem] font-medium">
             Deals of the Month

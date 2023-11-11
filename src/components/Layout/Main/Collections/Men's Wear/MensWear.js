@@ -62,7 +62,7 @@ const MensWear = (props) => {
       {enableSwiper ? (
         <SwiperComponent items={props.wears} />
       ) : (
-        <ul className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] md:gap-[2rem] place-items-center">
+        <ul className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 lg:gap-[5rem] mac:gap-[5rem] xl:gap-[2.5rem] md:gap-[2rem] place-items-center">
           {props.wears.map((item) => (
             // console.log("item:", item),
             <Card

@@ -6,7 +6,7 @@ import Card from "../../UI/Cards";
 
 const Footer = () => {
   return (
-    <section className="lg:max-w-[63rem] xl:max-w-[80rem] md:max-w-[88rem] max-w-[90rem] m-auto px-[1rem] md:px-[1.5rem] lg:px-0">
+    <section className="lg:max-w-[63rem] mac:max-w-[80rem] xl:max-w-[78rem] md:max-w-[88rem] max-w-[90rem] m-auto px-[1rem] md:px-[1.5rem] lg:px-0">
       <footer className="flex between mb-[3rem]">
         <img
           src={footer1}

@@ -7,18 +7,6 @@ const MiniFooter = () => {
   return (
     <section className="border-t-2 border-[#DEDFE1] pt-[1.88rem] bg-black">
       <div className="lg:max-w-[60rem] xl:max-w-[80rem] md:max-w-[80rem] m-auto max-w-[90rem] sm:px-0 px-[1.2rem]">
-        {/* <div className="flex lg:justify-between md:justify-around justify-between pb-[3.12rem]">
-          <h2 className="text-[#484848] font-serif lg:text-[2rem] md:text-[1.2rem] text-[2rem] font-normal flex md:items-end">
-            Ellorn
-          </h2>
-          <div className="flex md:items-end  sm:flex-row  sm:space-x-[3rem] flex-col space-y-[2rem]">
-            <p className="sm:text-[1rem] text-[0.65rem]">Support center</p>
-            <p className="sm:text-[1rem] text-[0.65rem]">Invoicing</p>
-            <p className="sm:text-[1rem] text-[0.65rem]">Careers</p>
-            <p className="sm:text-[1rem] text-[0.65rem]">Blog</p>
-            <p className="sm:text-[1rem] text-[0.65rem]">FAQS</p>
-          </div>
-        </div> */}
         <div className="grid md:grid-cols-4 grid-cols-2 place-content-center place-items-center">
           <div className="py-[2rem]">
             <h2 className=" font-serif lg:text-[2rem] md:text-[1.7rem] text-[2.5rem] font-normal  text-white pb-[1.5rem]">
