@@ -8,11 +8,11 @@ const Nav = (props) => {
       <div className="flex justify-between">
         <motion.h2
           initial={{ y: -120, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 0.9 }}
           transition={{
             type: "spring",
-            delay: 0.4,
-            duration: 3,
+            delay: 0.2,
+            duration: 2,
           }}
           className="font-semibold sm:text-[3.25rem] text-[1.46rem] font-serif text-[#484848]"
         >
@@ -24,8 +24,8 @@ const Nav = (props) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{
               type: "spring",
-              delay: 0.4,
-              duration: 3,
+              delay: 0.2,
+              duration: 2,
             }}
           >
             New Arrivals
@@ -35,8 +35,8 @@ const Nav = (props) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{
               type: "spring",
-              delay: 0.4,
-              duration: 3,
+              delay: 0.2,
+              duration: 2,
             }}
           >
             Orders
@@ -46,8 +46,8 @@ const Nav = (props) => {
             animate={{ y: 0, opacity: 1 }}
             transition={{
               type: "spring",
-              delay: 0.4,
-              duration: 3,
+              delay: 0.2,
+              duration: 2,
             }}
             className="-mt-2 sm:-mt-0"
           >

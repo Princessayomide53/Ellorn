@@ -13,6 +13,7 @@ import Footer from "./components/Layout/Footer/Footer";
 import MiniFooter from "./components/Layout/Footer/MiniFooter";
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./store/CartProvider";
+import Preloader from "./components/Preloader/Preloader";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -25,21 +26,24 @@ function App() {
     setShowCart(false);
   }, []);
   return (
-    <CartProvider>
-      <Nav onShowCart={showHandler} />
-      {showCart && <Cart onHideCart={hideHandler} />}
-      <Header />
-      <Logo />
-      <Main />
-      <Arrival />
-      <Slider />
-      <Features />
-      <Socials />
-      <Testimonials />
-      <Footer />
-      <MiniFooter />
-      {/* <RouterComponent /> */}
-    </CartProvider>
+    <>
+      {/* <Preloader /> */}
+      <CartProvider>
+        <Nav onShowCart={showHandler} />
+        {showCart && <Cart onHideCart={hideHandler} />}
+        <Header />
+        <Logo />
+        <Main />
+        <Arrival />
+        <Slider />
+        <Features />
+        <Socials />
+        <Testimonials />
+        <Footer />
+        <MiniFooter />
+        {/* <RouterComponent /> */}
+      </CartProvider>
+    </>
   );
 }
 
