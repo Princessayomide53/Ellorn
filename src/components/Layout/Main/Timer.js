@@ -2,7 +2,7 @@ import React from "react";
 
 const Timer = () => {
   return (
-    <div className="flex lg:space-x-[2rem] md:space-x-[1rem]">
+    <div className="flex lg:space-x-[2rem] md:space-x-[1rem] space-x-[0.75rem]">
       <div>
         <h3 className="text-[#484848] lg:text-[2rem] md:text-[0.8rem] text-[0.5rem] font-normal leading-[2rem] bg-white px-3 sm:py-[0.7rem] py-[0.4rem]  rounded-md shadow-xl">
           40

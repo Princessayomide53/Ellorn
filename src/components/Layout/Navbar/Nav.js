@@ -18,7 +18,7 @@ const Nav = (props) => {
         >
           Ellorn
         </motion.h2>
-        <ul className="sm:space-x-12 space-x-5 flex sm:text-[1.2rem] text-[0.65rem] text-[#484848] pt-4 font-normal sm:pt-7">
+        <ul className="sm:space-x-12 space-x-5 flex sm:text-[1.2rem] text-[0.65rem] text-[#484848] pt-3 font-normal sm:pt-7">
           <motion.li
             initial={{ y: -120, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

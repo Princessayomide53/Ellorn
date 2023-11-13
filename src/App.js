@@ -14,6 +14,7 @@ import MiniFooter from "./components/Layout/Footer/MiniFooter";
 import Cart from "./components/Cart/Cart";
 import { CartProvider } from "./store/CartProvider";
 import Preloader from "./components/Preloader/Preloader";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [showCart, setShowCart] = useState(false);
@@ -27,7 +28,9 @@ function App() {
   }, []);
   return (
     <CartProvider>
-      {/* <Preloader /> */}
+      <Toaster position="top-center" reverseOrder={false} />
+
+      <Preloader />
       <Nav onShowCart={showHandler} />
       {showCart && <Cart onHideCart={hideHandler} />}
       <Header />

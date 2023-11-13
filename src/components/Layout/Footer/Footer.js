@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import footer1 from "../../../assets/footer1.png";
 import footer2 from "../../../assets/footer2.png";
 import Card from "../../UI/Cards";
 // import MiniFooter from "./MiniFooter";
+import { toast } from "react-hot-toast";
 
 const Footer = () => {
+  const inputRef = useRef();
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    const emailInput = inputRef.current.value;
+
+    if (emailInput.includes("@")) {
+      toast.success("Thank you for Subscribing 😃");
+      console.log("success");
+    } else {
+      toast.error("Invalid Email");
+    }
+    inputRef.current.value = "";
+  };
+
   return (
     <section className="lg:max-w-[63rem] mac:max-w-[80rem] xl:max-w-[78rem] md:max-w-[88rem] max-w-[90rem] m-auto px-[1rem] md:px-[1.5rem] lg:px-0">
       <footer className="flex between mb-[3rem]">
@@ -23,21 +39,27 @@ const Footer = () => {
             <br /> ultrices sollicitudin aliquam sem. Scelerisque duis ultrices
             sollicitudin
           </p>
-          <div
-            className="md:px-5 px-2 pb-[1.88rem]
+          <form onSubmit={submitHandler}>
+            <div
+              className="md:px-5 px-2 pb-[1.88rem]
             "
-          >
-            <input
-              type="text"
-              className="w-full rounded-md shadow-2xl sm:h-[3.5rem] sm:pl-5 pl-2 sm:placeholder:text-[1.2rem] py-[2px] text-[0.75rem] placeholder:text-[0.4rem] border-b-2 border-[#484848] focus:outline-blue-400"
-              placeholder="Micheal@email.com"
-            />
-          </div>
-          <div className="flex justify-center">
-            <button className=" bg-black text-white rounded-lg sm:h-[3.5rem] sm:w-[12.9375rem] px-5 sm:text-[1rem] text-[0.55rem] py-2 transition duration-300 sm:py-[0.625rem]">
-              Subscribe
-            </button>
-          </div>
+            >
+              <input
+                ref={inputRef}
+                type="text"
+                className="w-full rounded-md shadow-2xl sm:h-[3.5rem] sm:pl-5 pl-2 sm:placeholder:text-[1.2rem] py-[2px] text-[0.75rem] placeholder:text-[0.4rem] border-b-2 border-[#484848] focus:outline-blue-400"
+                placeholder="Micheal@email.com"
+              />
+            </div>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className=" bg-black text-white rounded-lg sm:h-[3.5rem] sm:w-[12.9375rem] px-5 sm:text-[1rem] text-[0.55rem] py-2 transition duration-300 sm:py-[0.625rem]"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
         </Card>
         <img
           src={footer2}
