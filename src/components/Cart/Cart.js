@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import CartContext from "../../store/cart-context";
@@ -8,9 +8,21 @@ const Cart = (props) => {
   const cartsCtx = useContext(CartContext);
   const totalAmount = `$${cartsCtx.totalAmount.toFixed(2)} `;
 
+  const { items } = cartsCtx;
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(cartsCtx.items));
+    console.log("adding items", cartsCtx.items);
+    if (cartsCtx.items === 0) {
+      localStorage.removeItem(cartsCtx.items);
+    }
+  }, [cartsCtx.items]);
+
   const cartItemAddHandler = (items) => {
     cartsCtx.addCart(items);
+    console.log("added more items", items);
   };
+
   const cartItemRemoveHandler = (id) => {
     cartsCtx.removeCart(id);
     // console.log(id);

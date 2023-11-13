@@ -6,11 +6,10 @@ import CartContext from "../../../../../store/cart-context";
 
 const MensWear = (props) => {
   const [enableSwiper, setEnableSwiper] = useState(window.innerWidth < 768);
-  const [selected, setSelected] = useState("");
 
   const cartItemCtx = useContext(CartContext);
   const addToCartHandler = (item) => {
-    // if (item) {
+    console.log("adding to Cart", cartItemCtx.addCart);
     cartItemCtx.addCart({
       id: item.id,
       img: item.img,
@@ -19,32 +18,12 @@ const MensWear = (props) => {
       shouldRender: item.shouldRender,
       quantity: 1,
     });
-    // } else {
-    //   console.log("Item is undefined.");
-    // }
   };
 
-  const handleChange = (e) => {
-    setSelected(e.target.value);
-  };
-
-  // const handleSubmit = (e, item) => {
-  //   e.preventDefault();
-
-  //   const itemWithShouldRender = props.wears.find(
-  //     (item) => item.shouldRender === true
-  //   );
-
-  //   if (itemWithShouldRender && selected === "") {
-  //     alert("Select an option");
-  //   } else {
-  //     console.log("No item with shouldRender set to true was found.");
-  //     addToCartHandler(item);
-  //   }
-
-  //   console.log(addToCartHandler);
-  //   console.log(selected);
-  // };
+  // useEffect(() => {
+  //   localStorage.setItem("itemss", JSON.stringify(cartItemCtx.items));
+  //   console.log("adding items", cartItemCtx.items);
+  // }, [cartItemCtx.items]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -89,7 +68,7 @@ const MensWear = (props) => {
               <p className="text-[#8A8A8A]  lg:text-[0.75rem] md:text-[0.65rem] text-[0.68rem] font-medium">
                 {item.brand}
               </p>
-              {/* <form onSubmit={handleSubmit}> */}
+
               <div className="flex my-4 justify-between ">
                 <p className=" lg:text-[0.75rem] md:text-[0.5rem] text-[0.58rem] text-[#484848] font-medium">
                   {item.reviews}
@@ -109,22 +88,7 @@ const MensWear = (props) => {
                 <h4 className=" text-[#484848] lg:text-[1.5rem] md:text-[0.9rem] text-[0.8rem] tracking-[-0.015rem] font-medium ">
                   ${item.amount}
                 </h4>
-                {item.shouldRender && (
-                  <select
-                    value={selected}
-                    onChange={handleChange}
-                    className="border-2 border-black cursor-pointer rounded-md lg:p-1 md:p-0 text-[0.8rem]"
-                  >
-                    <option value="">Select </option>
-                    <option value="s">small</option>
-                    <option value="m">medium</option>
-                    <option value="l">large</option>
-                    <option value="xl">xtra-lg</option>
-                    <option value="xxl">xxtra-lg</option>
-                  </select>
-                )}
               </div>
-              {/* </form> */}
             </Card>
           ))}
         </ul>

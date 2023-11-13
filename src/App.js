@@ -26,24 +26,22 @@ function App() {
     setShowCart(false);
   }, []);
   return (
-    <>
+    <CartProvider>
       {/* <Preloader /> */}
-      <CartProvider>
-        <Nav onShowCart={showHandler} />
-        {showCart && <Cart onHideCart={hideHandler} />}
-        <Header />
-        <Logo />
-        <Main />
-        <Arrival />
-        <Slider />
-        <Features />
-        <Socials />
-        <Testimonials />
-        <Footer />
-        <MiniFooter />
-        {/* <RouterComponent /> */}
-      </CartProvider>
-    </>
+      <Nav onShowCart={showHandler} />
+      {showCart && <Cart onHideCart={hideHandler} />}
+      <Header />
+      <Logo />
+      <Main />
+      <Arrival />
+      <Slider />
+      <Features />
+      <Socials />
+      <Testimonials />
+      <Footer />
+      <MiniFooter />
+      {/* <RouterComponent /> */}
+    </CartProvider>
   );
 }
 
