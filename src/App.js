@@ -30,7 +30,7 @@ function App() {
     <CartProvider>
       <Toaster position="top-center" reverseOrder={false} />
 
-      <Preloader />
+      {/* <Preloader /> */}
       <Nav onShowCart={showHandler} />
       {showCart && <Cart onHideCart={hideHandler} />}
       <Header />
