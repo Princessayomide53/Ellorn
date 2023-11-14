@@ -8,44 +8,16 @@ import { CiStar } from "react-icons/ci";
 import CartContext from "../../../store/cart-context";
 
 const SwiperComponent = ({ items }) => {
-  const [selected, setSelected] = useState("");
-
   const cartItemCtx = useContext(CartContext);
   const addToCartHandler = (item) => {
-    if (item) {
-      cartItemCtx.addCart({
-        id: item.id,
-        img: item.img,
-        description: item.description,
-        amount: item.amount,
-        shouldRender: item.shouldRender,
-        quantity: 1,
-      });
-    } else {
-      console.log("Item is undefined.");
-    }
-  };
-
-  const handleChange = (e) => {
-    setSelected(e.target.value);
-  };
-
-  const handleSubmit = (e, item) => {
-    e.preventDefault();
-
-    const itemWithShouldRender = items.find(
-      (item) => item.shouldRender === true
-    );
-
-    if (itemWithShouldRender && selected === "") {
-      alert("Select an option");
-    } else {
-      console.log("No item with shouldRender set to true was found.");
-      addToCartHandler(item);
-    }
-
-    console.log(addToCartHandler);
-    console.log(selected);
+    cartItemCtx.addCart({
+      id: item.id,
+      img: item.img,
+      description: item.description,
+      amount: item.amount,
+      shouldRender: item.shouldRender,
+      quantity: 1,
+    });
   };
 
   return (
@@ -82,7 +54,6 @@ const SwiperComponent = ({ items }) => {
                 <p className="text-[#8A8A8A] text-[0.68rem] font-medium">
                   {item.brand}
                 </p>
-                {/* <form onSubmit={handleSubmit}> */}
                 <div className="flex my-4 justify-between">
                   <p className=" text-[0.58rem] text-[#484848] font-medium">
                     {item.reviews}
@@ -101,21 +72,7 @@ const SwiperComponent = ({ items }) => {
                   <h4 className=" text-[#484848] text-[0.85rem] tracking-[-0.015rem] font-medium ">
                     ${item.amount}
                   </h4>
-                  {item.shouldRender && (
-                    <select
-                      onChange={handleChange}
-                      value={selected}
-                      className="border-2 -mt-1 md:-mt-1 lg:-mt-0 border-black cursor-pointer rounded-md lg:p-1 md:p-0"
-                    >
-                      <option value="s">s</option>
-                      <option value="m">m</option>
-                      <option value="l">lg</option>
-                      <option value="xl">xl</option>
-                      <option value="xxl">xxl</option>
-                    </select>
-                  )}
                 </div>
-                {/* </form> */}
               </Card>
             </div>
           </SwiperSlide>
