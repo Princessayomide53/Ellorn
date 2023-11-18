@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <section className="lg:max-w-[80rem] md:max-w-[88rem] mac:max-w-[80rem] xl:max-w-[78rem] max-w-[90rem] m-auto">
+    <section className="lg:max-w-[80rem] md:max-w-[88rem] mac:max-w-[80rem] xl:max-w-[78rem] max-w-[75rem] m-auto">
       <div className="grid-cols-3 grid place-content-center place-items-center sm:my-[3rem] my-[1rem] mt-[5rem] sm:mt-[7.8rem]">
         <div className="">
           <motion.img
@@ -21,7 +21,7 @@ const Header = () => {
             }}
             src={images}
             alt=""
-            className="xl:h-[47rem] mac:w-[24.5rem] xl:w-[22rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[26.5rem] w-[6.5rem] h-[18rem]"
+            className="xl:h-[47rem] mac:w-[24.5rem] xl:w-[22rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[26.5rem] w-[6.75rem] h-[16rem]"
           />
         </div>
         <div className="flex justify-center flex-col items-center">
@@ -45,11 +45,11 @@ const Header = () => {
               delay: 0.5,
               duration: 3.5,
             }}
-            className="text-[#484848] text-center lg:text-[5.5rem] mac:text-[5.6875rem] xl:text-[5.6875rem] md:text-[2.8875rem] text-[1.9rem] tracking-tight font-medium"
+            className="text-[#484848] text-center lg:text-[5.5rem] mac:text-[5.6875rem] xl:text-[5.6875rem] md:text-[2.8875rem] text-[1.35rem] tracking-tight font-medium"
           >
             ULTIMATE
           </motion.h2>
-          <h2 className="text-center text-[#484848] lg:text-[9.5rem] mac:text-[11.2875rem] xl:text-[11.2875rem] md:text-[5.6875rem] text-[3.5rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
+          <h2 className="text-center text-[#484848] lg:text-[9.5rem] mac:text-[11.2875rem] xl:text-[11.2875rem] md:text-[5.6875rem] text-[2.8rem] sm:-m-[2.2rem] -m-[0.55rem] font-medium text-stroke">
             SALE
           </h2>
           <p className="text-center text-[#484848] font-normal md:text-[0.85rem] md:mt-3 lg:mt-0 lg:text-[1.25rem] text-[0.65rem] tracking-[0.125rem]">
@@ -78,7 +78,7 @@ const Header = () => {
             }}
             src={image2}
             alt=""
-            className="xl:h-[47rem] mac:w-[24.5rem] xl:w-[22rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[26.5rem] w-[6.5rem] h-[18rem]"
+            className="xl:h-[47rem] mac:w-[24.5rem] xl:w-[22rem] lg:h-[44rem] lg:w-[18rem] md:w-[12rem] md:h-[26.5rem] w-[6.75rem] h-[16rem]"
           />
         </div>
       </div>

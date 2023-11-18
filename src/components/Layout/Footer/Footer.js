@@ -27,10 +27,10 @@ const Footer = () => {
         <img
           src={footer1}
           alt=""
-          className="lg:w-[21.1875rem] lg:h-[46.6875rem] md:w-[11.5rem] md:h-[27rem] w-[6rem] h-[12rem]"
+          className="lg:w-[21.1875rem] lg:h-[46.6875rem] md:w-[11.5rem] md:h-[27rem] w-[5.5rem] h-[12rem]"
         />
         <Card className="lg:w-[35rem] xl:w-[39.4375rem] lg:h-[20.8125rem] md:w-[25rem] md:h-[15rem] w-[12rem] h-[13rem]  m-auto sm:p-[1rem] p-[0.45rem]">
-          <h3 className="text-[#484848] pb-[1.25rem] text-center lg:text-[1.4rem] xl:text-[2.475rem] md:text-[1.342rem] text-[0.65rem] font-normal leading-normal capitalize">
+          <h3 className="text-[#484848] pb-[1.25rem] text-center lg:text-[1.4rem] xl:text-[2.475rem] md:text-[1.342rem] text-[0.65rem] font-medium leading-normal capitalize">
             Subscribe to our newsletter
           </h3>
           <p className="text-[#8A8A8A] text-center sm:leading-[1.625rem] lg:text-[0.85rem] xl:text-[0.9rem] md:text-[0.5rem] text-[0.45rem] font-normal pb-[0.75rem] sm:pb-[1.8rem]">
@@ -64,7 +64,7 @@ const Footer = () => {
         <img
           src={footer2}
           alt=""
-          className="lg:w-[20.0625rem] md:w-[11.5rem] md:h-[27rem] lg:h-[46.6875rem] w-[5.5rem] h-[12rem]"
+          className="lg:w-[20.0625rem] md:w-[11.5rem] md:h-[27rem] lg:h-[46.6875rem] w-[5.2rem] h-[12rem]"
         />
       </footer>
     </section>
