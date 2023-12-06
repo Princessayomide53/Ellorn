@@ -41,7 +41,7 @@ function App() {
       <Features />
       <Socials />
       <Testimonials />
-      <Footer />
+      {/* <Footer /> */}
       <MiniFooter />
       {/* <RouterComponent /> */}
     </CartProvider>

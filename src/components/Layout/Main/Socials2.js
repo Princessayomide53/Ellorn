@@ -39,7 +39,7 @@ const pictures = [
 ];
 const Socials2 = () => {
   return (
-    <section className="lg:max-w-[80rem] m-auto">
+    <section className="lg:max-w-[80rem] xl:max-w-full m-auto lg:mb-[5rem]">
       <div className="grid grid-cols-7 h-[100%] place-content-center place-items-center">
         {pictures.map((images) => (
           <img
